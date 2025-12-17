@@ -13,7 +13,7 @@ const Heritage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
         <div className="relative">
-          <img src="https://picsum.photos/800/1000?grayscale" alt="Historical Saint Louis" className="w-full rounded-sm shadow-2xl" />
+          <img src="/images/hero/saint-louis-market.jpg" alt="Historical Saint Louis" className="w-full rounded-sm shadow-2xl" />
           <div className="absolute -bottom-6 -right-6 bg-white p-6 shadow-xl max-w-xs hidden md:block">
             <p className="font-serif italic text-stone-600">{t('heritage.quote')}</p>
           </div>

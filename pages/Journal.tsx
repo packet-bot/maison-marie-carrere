@@ -9,21 +9,21 @@ const Journal: React.FC = () => {
       id: 1,
       date: "Dec 10, 2025",
       title: t('journal.art1.title'),
-      image: "https://picsum.photos/800/600?random=60",
+      image: "/images/about/fair-market.jpg",
       excerpt: t('journal.art1.desc')
     },
     {
       id: 2,
       date: "Nov 22, 2025",
       title: t('journal.art2.title'),
-      image: "https://picsum.photos/800/600?random=61",
+      image: "/images/hero/saint-louis-market.jpg",
       excerpt: t('journal.art2.desc')
     },
     {
       id: 3,
       date: "Oct 05, 2025",
       title: t('journal.art3.title'),
-      image: "https://picsum.photos/800/600?random=62",
+      image: "/images/process/factory.jpg",
       excerpt: t('journal.art3.desc')
     }
   ];

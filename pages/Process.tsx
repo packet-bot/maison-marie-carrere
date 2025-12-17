@@ -15,7 +15,7 @@ const Process: React.FC = () => {
         {/* Step 1 */}
         <div className="flex flex-col md:flex-row gap-12 items-center mb-24">
           <div className="w-full md:w-1/2">
-             <img src="https://picsum.photos/800/500?random=50" alt="Farming" className="rounded-lg shadow-xl" />
+             <img src="/images/hero/farm.jpg" alt="Farming" className="rounded-lg shadow-xl" />
           </div>
           <div className="w-full md:w-1/2">
             <div className="w-12 h-12 bg-mmc-gold text-white flex items-center justify-center rounded-full font-bold text-xl mb-6">1</div>
@@ -29,7 +29,7 @@ const Process: React.FC = () => {
         {/* Step 2 */}
         <div className="flex flex-col md:flex-row-reverse gap-12 items-center mb-24">
           <div className="w-full md:w-1/2">
-             <img src="https://picsum.photos/800/500?random=51" alt="Laboratory" className="rounded-lg shadow-xl grayscale contrast-125" />
+             <img src="/images/process/lab.jpg" alt="Laboratory" className="rounded-lg shadow-xl grayscale contrast-125" />
           </div>
           <div className="w-full md:w-1/2">
              <div className="w-12 h-12 bg-mmc-navy text-white flex items-center justify-center rounded-full font-bold text-xl mb-6">2</div>
@@ -47,7 +47,7 @@ const Process: React.FC = () => {
          {/* Step 3 */}
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/2">
-             <img src="https://picsum.photos/800/500?random=52" alt="Logistics" className="rounded-lg shadow-xl" />
+             <img src="/images/process/factory.jpg" alt="Logistics" className="rounded-lg shadow-xl" />
           </div>
           <div className="w-full md:w-1/2">
              <div className="w-12 h-12 bg-tootank-green text-white flex items-center justify-center rounded-full font-bold text-xl mb-6">3</div>

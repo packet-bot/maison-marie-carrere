@@ -7,7 +7,7 @@ const PleinePassion: React.FC = () => {
     <div className="w-full">
       {/* Hero */}
       <section className="relative h-[60vh]">
-        <img src="https://picsum.photos/1920/1080?random=15" alt="Dairy Farm" className="w-full h-full object-cover" />
+        <img src="/images/products/milk.jpg" alt="Dairy Farm" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-mmc-navy/40 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-5xl md:text-7xl font-serif mb-4">Pleine Passion</h1>
@@ -32,8 +32,8 @@ const PleinePassion: React.FC = () => {
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
-             <img src="https://picsum.photos/400/600?random=20" alt="Milk Pour" className="rounded-lg shadow-lg translate-y-8" />
-             <img src="https://picsum.photos/400/600?random=21" alt="Yogurt" className="rounded-lg shadow-lg" />
+             <img src="/images/products/milk-pp.jpg" alt="Milk Pour" className="rounded-lg shadow-lg translate-y-8" />
+             <img src="/images/products/yogurt.jpg" alt="Yogurt" className="rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -53,19 +53,19 @@ const PleinePassion: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group cursor-pointer">
               <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="https://picsum.photos/500/800?random=30" alt="Leather Bag" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="/images/products/leather-1.jpg" alt="Leather Bag" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item1')}</div>
               </div>
             </div>
             <div className="group cursor-pointer md:mt-12">
                <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="https://picsum.photos/500/800?random=31" alt="Linen Shirt" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="/images/products/bag.jpg" alt="Linen Shirt" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                  <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item2')}</div>
               </div>
             </div>
             <div className="group cursor-pointer">
                <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="https://picsum.photos/500/800?random=32" alt="Accessories" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="/images/products/leather-2.jpg" alt="Accessories" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                  <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item3')}</div>
               </div>
             </div>

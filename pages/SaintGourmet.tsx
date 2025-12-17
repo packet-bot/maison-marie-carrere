@@ -8,7 +8,7 @@ const SaintGourmet: React.FC = () => {
       {/* Luxury Hero */}
       <section className="h-[80vh] relative flex items-center justify-center">
         <div className="absolute inset-0 opacity-60">
-           <img src="https://picsum.photos/1920/1080?grayscale&blur=2" alt="Pastry Art" className="w-full h-full object-cover" />
+           <img src="/images/products/yogurt.jpg" alt="Pastry Art" className="w-full h-full object-cover" />
         </div>
         <div className="z-10 text-center px-6 border-y border-mmc-gold/50 py-12 bg-black/40 backdrop-blur-sm">
           <span className="block text-mmc-gold tracking-[0.4em] text-xs font-bold mb-4">{t('sg.hero.sub')}</span>
@@ -38,13 +38,13 @@ const SaintGourmet: React.FC = () => {
             </button>
           </div>
           <div className="order-1 md:order-2 h-[600px] overflow-hidden">
-            <img src="https://picsum.photos/800/800?random=4" alt="Luxury Eclair" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+            <img src="/images/products/cheese.jpg" alt="Luxury Eclair" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="h-[600px] overflow-hidden">
-            <img src="https://picsum.photos/800/800?random=5" alt="Macarons" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+            <img src="/images/products/yogurt.jpg" alt="Macarons" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
           </div>
           <div>
             <h3 className="text-4xl font-serif text-mmc-gold mb-6">{t('sg.prod2.title')}</h3>

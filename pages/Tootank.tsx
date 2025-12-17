@@ -22,7 +22,7 @@ const Tootank: React.FC = () => {
             </button>
           </div>
           <div className="relative">
-             <img src="https://picsum.photos/600/600?random=6" alt="Happy Toddler" className="rounded-[50px] shadow-2xl border-8 border-white" />
+             <img src="/images/products/baby-food.jpg" alt="Happy Toddler" className="rounded-[50px] shadow-2xl border-8 border-white" />
              <div className="absolute -bottom-10 -left-10 bg-yellow-400 text-stone-900 p-6 rounded-full font-bold shadow-lg animate-bounce">
                 <span className="block text-center">{t('tt.sticker')}</span>
              </div>
@@ -69,7 +69,7 @@ const Tootank: React.FC = () => {
             {[1, 2, 3, 4].map((item) => (
               <div key={item} className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
                 <div className="h-48 bg-stone-100 rounded-xl mb-4 overflow-hidden">
-                  <img src={`https://picsum.photos/300/300?random=${10 + item}`} alt="Baby Food Pouch" className="w-full h-full object-cover" />
+                  <img src="/images/products/baby-food.jpg" alt="Baby Food Pouch" className="w-full h-full object-cover" />
                 </div>
                 <h4 className="font-bold text-lg mb-1">{t('tt.fav.item.name')} {item}</h4>
                 <p className="text-sm text-stone-500 mb-4">{t('tt.fav.item.desc')}</p>

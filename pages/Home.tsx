@@ -10,9 +10,9 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://picsum.photos/1920/1080?grayscale" 
-            alt="Senegalese Landscape" 
+          <img
+            src="/images/hero/saint-louis-market.jpg"
+            alt="Senegalese Landscape"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -20,9 +20,14 @@ const Home: React.FC = () => {
         
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6">
           <h2 className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 text-mmc-gold fade-in">{t('home.hero.sub')}</h2>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium mb-8 leading-tight fade-in">
-            Maison <br /> Marie Carrère
-          </h1>
+          <img
+            src="/images/hero/logo-mcc2.png"
+            alt="Maison Marie Carrère"
+            className="w-full max-w-2xl mb-8 fade-in"
+            style={{
+              filter: 'brightness(0) invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)'
+            }}
+          />
           <p className="max-w-xl text-lg text-stone-200 mb-10 font-light fade-in">
             {t('home.hero.desc')}
           </p>
@@ -52,9 +57,9 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-2xl">
             {/* Pleine Passion */}
             <div className="group relative h-[500px] overflow-hidden">
-              <img 
-                src="https://picsum.photos/600/800?random=1" 
-                alt="Pleine Passion" 
+              <img
+                src="/images/products/milk-pp.jpg"
+                alt="Pleine Passion"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-mmc-navy/30 group-hover:bg-mmc-navy/50 transition-colors duration-300"></div>
@@ -71,9 +76,9 @@ const Home: React.FC = () => {
 
             {/* Saint Gourmet */}
             <div className="group relative h-[500px] overflow-hidden border-l border-r border-white/20">
-              <img 
-                src="https://picsum.photos/600/800?random=2" 
-                alt="Saint Gourmet" 
+              <img
+                src="/images/products/yogurt.jpg"
+                alt="Saint Gourmet"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300"></div>
@@ -91,9 +96,9 @@ const Home: React.FC = () => {
 
             {/* Toot'ank */}
             <div className="group relative h-[500px] overflow-hidden">
-              <img 
-                src="https://picsum.photos/600/800?random=3" 
-                alt="Toot'ank" 
+              <img
+                src="/images/products/baby-food.jpg"
+                alt="Toot'ank"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-tootank-green/20 group-hover:bg-tootank-green/40 transition-colors duration-300"></div>

@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maison Marie Carrère</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts will be loaded from local files if available -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              serif: ['NEXA', 'Arial', 'sans-serif'],
+              sans: ['Futura', 'Arial', 'sans-serif'],
+              script: ['Adage Script', 'cursive'],
             },
             colors: {
               mmc: {
@@ -34,6 +33,58 @@
       }
     </script>
     <style>
+      /* Custom Fonts */
+      @font-face {
+        font-family: 'NEXA';
+        src: url('/fonts/NEXA-Bold.woff2') format('woff2'),
+             url('/fonts/NEXA-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'NEXA';
+        src: url('/fonts/NEXA-Regular.woff2') format('woff2'),
+             url('/fonts/NEXA-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Futura';
+        src: url('/fonts/Futura.woff2') format('woff2'),
+             url('/fonts/Futura.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Adage Script';
+        src: url('/fonts/AdageScript.woff2') format('woff2'),
+             url('/fonts/AdageScript.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      /* Apply italic font globally */
+      em, i, .italic, .font-serif.italic {
+        font-family: 'Adage Script', cursive !important;
+        font-style: normal;
+      }
+
+      /* Gold to White gradient for hero logo */
+      .logo-gradient {
+        filter: brightness(1.2) contrast(1.1);
+      }
+      .logo-gradient::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #C5A059 0%, #FFFFFF 100%);
+        mix-blend-mode: overlay;
+        pointer-events: none;
+      }
+
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
@@ -70,5 +121,6 @@
 </head>
   <body class="bg-stone-50 text-slate-900 font-sans antialiased">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
