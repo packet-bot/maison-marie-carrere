@@ -11,22 +11,43 @@ const Heritage: React.FC = () => {
         <div className="w-24 h-1 bg-mmc-gold mx-auto mb-12"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
-        <div className="relative">
+      <div className="max-w-5xl mx-auto px-6 mb-24">
+        <div className="relative mb-16">
           <img src="/images/hero/saint-louis-market.jpg" alt="Historical Saint Louis" className="w-full rounded-sm shadow-2xl" />
-          <div className="absolute -bottom-6 -right-6 bg-white p-6 shadow-xl max-w-xs hidden md:block">
-            <p className="font-serif italic text-stone-600">{t('heritage.quote')}</p>
-          </div>
         </div>
-        <div className="flex flex-col justify-center">
-          <h3 className="text-3xl font-serif text-mmc-navy mb-6">{t('heritage.matriarch.title')}</h3>
+        <div className="text-center">
+          <h3 className="text-3xl font-serif text-mmc-navy mb-8">{t('heritage.matriarch.title')}</h3>
           <p className="text-stone-600 leading-loose mb-6 text-lg">
             {t('heritage.matriarch.desc1')}
           </p>
           <p className="text-stone-600 leading-loose mb-6 text-lg">
             {t('heritage.matriarch.desc2')}
           </p>
-          <div className="grid grid-cols-2 gap-8 mt-8 border-t border-stone-200 pt-8">
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc3')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc4')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc5')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc6')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc7')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc8')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc9')}
+          </p>
+          <p className="text-stone-600 leading-loose mb-6 text-lg">
+            {t('heritage.matriarch.desc10')}
+          </p>
+          <div className="grid grid-cols-2 gap-8 mt-12 border-t border-stone-200 pt-8 max-w-md mx-auto">
             <div>
               <span className="block text-4xl font-serif text-mmc-gold mb-2">100%</span>
               <span className="text-sm uppercase tracking-widest text-stone-500">{t('heritage.stat.owned')}</span>

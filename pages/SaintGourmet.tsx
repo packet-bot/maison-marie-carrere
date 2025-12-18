@@ -12,15 +12,13 @@ const SaintGourmet: React.FC = () => {
         </div>
         <div className="z-10 text-center px-6 border-y border-mmc-gold/50 py-12 bg-black/40 backdrop-blur-sm">
           <span className="block text-mmc-gold tracking-[0.4em] text-xs font-bold mb-4">{t('sg.hero.sub')}</span>
-          <h1 className="text-6xl md:text-8xl font-serif text-white mb-2">Sain Gourmet</h1>
-          <p className="font-serif italic text-mmc-gold text-xl">{t('sg.hero.title')}</p>
+          <img src="/images/logos/Logo Sain Gourmet.png" alt="Sain Gourmet" className="h-[228px] md:h-[292px] mx-auto" />
         </div>
       </section>
 
       {/* Intro */}
       <section className="py-24 px-6 max-w-4xl mx-auto text-center">
         <p className="text-2xl font-serif leading-relaxed text-stone-300">
-          <span className="text-6xl text-mmc-gold float-left mr-4 pt-2">E</span>
           {t('sg.intro')}
         </p>
       </section>

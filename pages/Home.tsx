@@ -89,7 +89,7 @@ const Home: React.FC = () => {
                 <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6 text-stone-300">
                   {t('home.brand.sg.desc')}
                 </p>
-                <Link to="/saint-gourmet" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 border-b border-mmc-gold pb-1 flex items-center gap-2 uppercase text-xs tracking-widest text-mmc-gold">
+                <Link to="/sain-gourmet" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 border-b border-mmc-gold pb-1 flex items-center gap-2 uppercase text-xs tracking-widest text-mmc-gold">
                   {t('home.brand.sg.btn')} <ArrowRight size={12} />
                 </Link>
               </div>

@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
 
   // Determine if we are on the Sain Gourmet page for special luxury styling
-  const isLuxury = location.pathname.includes('saint-gourmet');
+  const isLuxury = location.pathname.includes('sain-gourmet');
   const isHome = location.pathname === '/';
   const isPleinePassion = location.pathname.includes('pleine-passion');
 
@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
     : isLuxury ? 'text-mmc-gold' : ((isHome || isPleinePassion) ? 'text-white' : 'text-mmc-navy');
 
   // Logo Logic
-  // We use the single black logo ('/logo.png') and adapt it using CSS filters.
-  const logoSrc = "/logo.png";
+  // We use the single black logo and adapt it using CSS filters.
+  const logoSrc = "/logo MCC wide 2.png";
 
   // Filters to recolor the black logo image
   let logoFilter = "";
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
           <img
             src={logoSrc}
             alt="Maison Marie Carrère"
-            style={{ filter: logoFilter }}
-            className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`}
+            style={{ filter: logoFilter, marginTop: '-8px' }}
+            className="w-auto h-12 object-contain transition-all duration-300"
           />
         </Link>
 
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
             <div className="absolute top-full left-0 w-56 pt-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
               <div className="bg-white shadow-xl border-t-2 border-mmc-gold rounded-b-md py-3 flex flex-col">
                 <Link to="/pleine-passion" className="px-6 py-2 hover:bg-stone-50 text-mmc-navy block">{t('nav.pp')}</Link>
-                <Link to="/saint-gourmet" className="px-6 py-2 hover:bg-black hover:text-mmc-gold text-mmc-navy block transition-colors">{t('nav.sg')}</Link>
+                <Link to="/sain-gourmet" className="px-6 py-2 hover:bg-black hover:text-mmc-gold text-mmc-navy block transition-colors">{t('nav.sg')}</Link>
                 <Link to="/tootank" className="px-6 py-2 hover:bg-tootank-soft text-mmc-navy block">{t('nav.tt')}</Link>
               </div>
             </div>
@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
         <div className="fixed inset-0 bg-mmc-navy z-40 flex flex-col justify-center items-center space-y-8 text-white text-xl font-serif md:hidden">
           <Link to="/heritage">{t('nav.heritage')}</Link>
           <Link to="/pleine-passion">{t('nav.pp')}</Link>
-          <Link to="/saint-gourmet" className="text-mmc-gold">{t('nav.sg')}</Link>
+          <Link to="/sain-gourmet" className="text-mmc-gold">{t('nav.sg')}</Link>
           <Link to="/tootank">{t('nav.tt')}</Link>
           <Link to="/process">{t('nav.process')}</Link>
           <Link to="/journal">{t('nav.journal')}</Link>
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
           <h4 className="text-sm font-bold uppercase tracking-widest mb-6 text-stone-300">{t('footer.brands')}</h4>
           <ul className="space-y-4 text-sm text-stone-400">
             <li><Link to="/pleine-passion" className="hover:text-white transition-colors">{t('nav.pp')}</Link></li>
-            <li><Link to="/saint-gourmet" className="hover:text-mmc-gold transition-colors">{t('nav.sg')}</Link></li>
+            <li><Link to="/sain-gourmet" className="hover:text-mmc-gold transition-colors">{t('nav.sg')}</Link></li>
             <li><Link to="/tootank" className="hover:text-tootank-green transition-colors">{t('nav.tt')}</Link></li>
           </ul>
         </div>
@@ -213,7 +213,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/heritage" element={<Heritage />} />
               <Route path="/process" element={<Process />} />
-              <Route path="/saint-gourmet" element={<SaintGourmet />} />
+              <Route path="/sain-gourmet" element={<SaintGourmet />} />
               <Route path="/tootank" element={<Tootank />} />
               <Route path="/pleine-passion" element={<PleinePassion />} />
               <Route path="/journal" element={<Journal />} />
