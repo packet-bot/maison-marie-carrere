@@ -8,11 +8,11 @@ const SaintGourmet: React.FC = () => {
       {/* Luxury Hero */}
       <section className="h-[80vh] relative flex items-center justify-center">
         <div className="absolute inset-0 opacity-60">
-           <img src="/images/products/yogurt.jpg" alt="Pastry Art" className="w-full h-full object-cover" />
+          <img src="/images/products/yogurt.jpg" alt="Pastry Art" className="w-full h-full object-cover" />
         </div>
         <div className="z-10 text-center px-6 border-y border-mmc-gold/50 py-12 bg-black/40 backdrop-blur-sm">
           <span className="block text-mmc-gold tracking-[0.4em] text-xs font-bold mb-4">{t('sg.hero.sub')}</span>
-          <h1 className="text-6xl md:text-8xl font-serif text-white mb-2">Saint Gourmet</h1>
+          <h1 className="text-6xl md:text-8xl font-serif text-white mb-2">Sain Gourmet</h1>
           <p className="font-serif italic text-mmc-gold text-xl">{t('sg.hero.title')}</p>
         </div>
       </section>
@@ -51,7 +51,7 @@ const SaintGourmet: React.FC = () => {
             <p className="text-stone-400 mb-8 leading-relaxed">
               {t('sg.prod2.desc')}
             </p>
-             <button className="border border-mmc-gold text-mmc-gold px-8 py-3 uppercase tracking-widest text-xs hover:bg-mmc-gold hover:text-black transition-colors">
+            <button className="border border-mmc-gold text-mmc-gold px-8 py-3 uppercase tracking-widest text-xs hover:bg-mmc-gold hover:text-black transition-colors">
               {t('sg.prod.btn')}
             </button>
           </div>
@@ -61,7 +61,7 @@ const SaintGourmet: React.FC = () => {
       {/* Quote */}
       <section className="py-24 bg-stone-900 text-center">
         <div className="max-w-3xl mx-auto px-6">
-           <p className="font-serif italic text-3xl text-mmc-gold">{t('sg.quote')}</p>
+          <p className="font-serif italic text-3xl text-mmc-gold">{t('sg.quote')}</p>
         </div>
       </section>
     </div>

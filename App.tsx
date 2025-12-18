@@ -19,9 +19,10 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
 
-  // Determine if we are on the Saint Gourmet page for special luxury styling
+  // Determine if we are on the Sain Gourmet page for special luxury styling
   const isLuxury = location.pathname.includes('saint-gourmet');
   const isHome = location.pathname === '/';
+  const isPleinePassion = location.pathname.includes('pleine-passion');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,28 +37,30 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const navClass = `fixed w-full z-50 transition-all duration-300 ${
-    isScrolled 
-      ? isLuxury ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg border-b border-mmc-gold/30' : 'bg-white/95 backdrop-blur-md py-4 shadow-md'
-      : 'bg-transparent py-6'
-  }`;
+  const navClass = `fixed w-full z-50 transition-all duration-300 ${isScrolled
+    ? isLuxury ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg border-b border-mmc-gold/30' : 'bg-white/95 backdrop-blur-md py-4 shadow-md'
+    : 'bg-transparent py-6'
+    }`;
 
-  const textClass = isScrolled 
-    ? isLuxury ? 'text-mmc-gold' : 'text-mmc-navy'
-    : isLuxury ? 'text-mmc-gold' : (isHome ? 'text-white' : 'text-mmc-navy');
-    
+  const textClass = isScrolled
+    ? isLuxury ? 'text-mmc-gold' : 'text-[#E87C3E]'
+    : isLuxury ? 'text-mmc-gold' : ((isHome || isPleinePassion) ? 'text-white' : 'text-mmc-navy');
+
   // Logo Logic
   // We use the single black logo ('/logo.png') and adapt it using CSS filters.
   const logoSrc = "/logo.png";
-  
+
   // Filters to recolor the black logo image
   let logoFilter = "";
   if (isLuxury) {
     // Gold (#C5A059)
     logoFilter = "invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)";
-  } else if (isHome && !isScrolled) {
+  } else if ((isHome || isPleinePassion) && !isScrolled) {
     // White
     logoFilter = "brightness(0) invert(1)";
+  } else if (isScrolled) {
+    // Orange (#E87C3E) when scrolled on non-luxury pages
+    logoFilter = "invert(58%) sepia(68%) saturate(640%) hue-rotate(342deg) brightness(95%) contrast(92%)";
   } else {
     // Navy (#0F172A) - transformed from black
     logoFilter = "invert(8%) sepia(36%) saturate(1176%) hue-rotate(186deg) brightness(92%) contrast(96%)";
@@ -68,11 +71,11 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo Image */}
         <Link to="/" className="flex items-center">
-          <img 
+          <img
             src={logoSrc}
-            alt="Maison Marie Carrère" 
+            alt="Maison Marie Carrère"
             style={{ filter: logoFilter }}
-            className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-10' : 'h-14'}`}
+            className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`}
           />
         </Link>
 
@@ -84,19 +87,19 @@ const Navbar: React.FC = () => {
               {t('nav.brands')} <ChevronRight size={14} className="rotate-90" />
             </span>
             <div className="absolute top-full left-0 w-56 pt-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-               <div className="bg-white shadow-xl border-t-2 border-mmc-gold rounded-b-md py-3 flex flex-col">
-                 <Link to="/pleine-passion" className="px-6 py-2 hover:bg-stone-50 text-mmc-navy block">{t('nav.pp')}</Link>
-                 <Link to="/saint-gourmet" className="px-6 py-2 hover:bg-black hover:text-mmc-gold text-mmc-navy block transition-colors">{t('nav.sg')}</Link>
-                 <Link to="/tootank" className="px-6 py-2 hover:bg-tootank-soft text-mmc-navy block">{t('nav.tt')}</Link>
-               </div>
+              <div className="bg-white shadow-xl border-t-2 border-mmc-gold rounded-b-md py-3 flex flex-col">
+                <Link to="/pleine-passion" className="px-6 py-2 hover:bg-stone-50 text-mmc-navy block">{t('nav.pp')}</Link>
+                <Link to="/saint-gourmet" className="px-6 py-2 hover:bg-black hover:text-mmc-gold text-mmc-navy block transition-colors">{t('nav.sg')}</Link>
+                <Link to="/tootank" className="px-6 py-2 hover:bg-tootank-soft text-mmc-navy block">{t('nav.tt')}</Link>
+              </div>
             </div>
           </div>
           <Link to="/process" className="hover:opacity-70 transition-opacity">{t('nav.process')}</Link>
           <Link to="/journal" className="hover:opacity-70 transition-opacity">{t('nav.journal')}</Link>
-          <Link to="/contact" className={`px-5 py-2 border ${isLuxury ? 'border-mmc-gold text-mmc-gold hover:bg-mmc-gold hover:text-black' : 'border-current hover:bg-mmc-navy hover:text-white'} transition-all uppercase text-xs tracking-widest`}>
+          <Link to="/contact" className={`px-5 py-2 border ${isLuxury ? 'border-mmc-gold text-mmc-gold hover:bg-mmc-gold hover:text-black' : isScrolled ? 'border-[#E87C3E] text-[#E87C3E] hover:bg-[#E87C3E] hover:text-white' : 'border-current hover:bg-mmc-navy hover:text-white'} transition-all uppercase text-xs tracking-widest`}>
             {t('nav.contact')}
           </Link>
-          <button 
+          <button
             onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
             className={`ml-4 flex items-center text-xs tracking-widest hover:opacity-70 transition-opacity`}
           >
@@ -108,7 +111,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-4 md:hidden">
-          <button 
+          <button
             onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
             className={`text-xs tracking-widest ${textClass}`}
           >
@@ -171,7 +174,7 @@ const Footer: React.FC = () => {
           <h4 className="text-sm font-bold uppercase tracking-widest mb-6 text-stone-300">{t('footer.contact')}</h4>
           <ul className="space-y-4 text-sm text-stone-400">
             <li className="flex items-center gap-3"><MapPin size={16} className="text-mmc-gold" /> Dakar, Senegal</li>
-            <li className="flex items-center gap-3"><Mail size={16} className="text-mmc-gold" /> contact@maisonmc.sn</li>
+            <li className="flex items-center gap-3"><Mail size={16} className="text-mmc-gold" /> contact@maisonmariecarrere.com</li>
             <li className="flex items-center gap-3"><Phone size={16} className="text-mmc-gold" /> +221 33 800 00 00</li>
             <li className="flex gap-4 pt-4">
               <Instagram className="hover:text-mmc-gold cursor-pointer" />

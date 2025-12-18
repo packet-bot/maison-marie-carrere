@@ -17,14 +17,15 @@ const Home: React.FC = () => {
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        
+
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6">
-          <h2 className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 text-mmc-gold fade-in">{t('home.hero.sub')}</h2>
+          <h2 className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 mt-5 text-mmc-gold fade-in">{t('home.hero.sub')}</h2>
           <img
             src="/images/hero/logo-mcc2.png"
             alt="Maison Marie Carrère"
-            className="w-full max-w-2xl mb-8 fade-in"
+            className="w-full mb-8 fade-in"
             style={{
+              maxWidth: '632px',
               filter: 'brightness(0) invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)'
             }}
           />
@@ -39,7 +40,7 @@ const Home: React.FC = () => {
               {t('home.hero.btn.process')}
             </Link>
           </div>
-          
+
           <div className="absolute bottom-10 animate-bounce">
             <ChevronDown className="text-white w-8 h-8" />
           </div>
@@ -50,8 +51,8 @@ const Home: React.FC = () => {
       <section className="py-24 bg-mmc-cream">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">{t('home.portfolio.sub')}</span>
-            <h2 className="text-4xl font-serif text-mmc-navy mt-4">{t('home.portfolio.title')}</h2>
+            <span className="text-mmc-gold uppercase tracking-widest text-sm font-bold">{t('home.portfolio.sub')}</span>
+            <h2 className="text-5xl font-serif font-bold text-mmc-navy mt-4">{t('home.portfolio.title')}</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-2xl">
@@ -64,7 +65,7 @@ const Home: React.FC = () => {
               />
               <div className="absolute inset-0 bg-mmc-navy/30 group-hover:bg-mmc-navy/50 transition-colors duration-300"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
-                <h3 className="text-3xl font-serif mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Pleine Passion</h3>
+                <img src="/images/logos/Logo pleine passion.png" alt="Pleine Passion" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
                 <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6">
                   {t('home.brand.pp.desc')}
                 </p>
@@ -74,17 +75,17 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Saint Gourmet */}
+            {/* Sain Gourmet */}
             <div className="group relative h-[500px] overflow-hidden border-l border-r border-white/20">
               <img
                 src="/images/products/yogurt.jpg"
-                alt="Saint Gourmet"
+                alt="Sain Gourmet"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
                 <span className="text-mmc-gold text-[10px] uppercase tracking-[0.3em] mb-2">{t('home.brand.sg.sub')}</span>
-                <h3 className="text-3xl font-serif mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 text-mmc-gold">Saint Gourmet</h3>
+                <img src="/images/logos/Logo Sain Gourmet.png" alt="Sain Gourmet" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
                 <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6 text-stone-300">
                   {t('home.brand.sg.desc')}
                 </p>
@@ -103,7 +104,7 @@ const Home: React.FC = () => {
               />
               <div className="absolute inset-0 bg-tootank-green/20 group-hover:bg-tootank-green/40 transition-colors duration-300"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
-                <h3 className="text-3xl font-sans font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Toot'ank</h3>
+                <img src="/images/logos/logo tootank.png" alt="Toot'ank" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
                 <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6 font-medium">
                   {t('home.brand.tt.desc')}
                 </p>
@@ -125,11 +126,7 @@ const Home: React.FC = () => {
           <p className="text-stone-500 text-lg leading-relaxed mb-10">
             {t('home.quote.desc')}
           </p>
-          <img 
-            src="https://picsum.photos/100/100?random=signature" 
-            alt="Signature" 
-            className="h-16 mx-auto opacity-50" 
-          />
+
         </div>
       </section>
     </div>

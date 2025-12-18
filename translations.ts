@@ -7,7 +7,7 @@ export const translations = {
     "nav.journal": "Journal",
     "nav.contact": "Contact",
     "nav.pp": "Pleine Passion",
-    "nav.sg": "Saint Gourmet",
+    "nav.sg": "Sain Gourmet",
     "nav.tt": "Toot'ank",
 
     // Footer
@@ -60,7 +60,7 @@ export const translations = {
     // Saint Gourmet
     "sg.hero.sub": "PREMIUM COLLECTION",
     "sg.hero.title": "L'Art de la Pâtisserie",
-    "sg.intro": "Elevating local ingredients to the height of sophistication. Saint Gourmet is the jewel in our crown, offering pastries and delicacies that rival the finest Parisian salons, yet rooted in the soul of Senegal.",
+    "sg.intro": "Elevating local ingredients to the height of sophistication. Sain Gourmet is the jewel in our crown, offering pastries and delicacies that rival the finest Parisian salons, yet rooted in the soul of Senegal.",
     "sg.prod1.title": "The Gold Standard Eclair",
     "sg.prod1.desc": "Crafted with locally sourced, ultra-fresh dairy from our Pleine Passion farms, enriched with imported vanilla pods and finished with 24k gold leaf. A symphony of textures.",
     "sg.prod.btn": "View Catalog",
@@ -107,7 +107,7 @@ export const translations = {
     "journal.art1.desc": "Showcasing Senegalese excellence on the global stage. Our booth attracted dignitaries and distributors from across Europe.",
     "journal.art2.title": "Partnership Announcement: Ministry of Agriculture",
     "journal.art2.desc": "A strategic alliance to boost local dairy production capacity in the Saint-Louis region.",
-    "journal.art3.title": "Saint Gourmet Launches 'The Gold Collection'",
+    "journal.art3.title": "Sain Gourmet Launches 'The Gold Collection'",
     "journal.art3.desc": "An exclusive tasting event held at the Museum of Black Civilizations.",
 
     // Contact
@@ -135,7 +135,7 @@ export const translations = {
     "nav.journal": "Journal",
     "nav.contact": "Contact",
     "nav.pp": "Pleine Passion",
-    "nav.sg": "Saint Gourmet",
+    "nav.sg": "Sain Gourmet",
     "nav.tt": "Toot'ank",
 
     // Footer
@@ -188,7 +188,7 @@ export const translations = {
     // Saint Gourmet
     "sg.hero.sub": "COLLECTION PREMIUM",
     "sg.hero.title": "L'Art de la Pâtisserie",
-    "sg.intro": "Élever les ingrédients locaux au sommet du raffinement. Saint Gourmet est le joyau de notre couronne, offrant des pâtisseries et des délices qui rivalisent avec les plus grands salons parisiens, tout en étant enracinés dans l'âme du Sénégal.",
+    "sg.intro": "Élever les ingrédients locaux au sommet du raffinement. Sain Gourmet est le joyau de notre couronne, offrant des pâtisseries et des délices qui rivalisent avec les plus grands salons parisiens, tout en étant enracinés dans l'âme du Sénégal.",
     "sg.prod1.title": "L'Éclair Gold Standard",
     "sg.prod1.desc": "Confectionné avec des produits laitiers ultra-frais de nos fermes Pleine Passion, enrichi de gousses de vanille importées et fini à la feuille d'or 24 carats. Une symphonie de textures.",
     "sg.prod.btn": "Voir le Catalogue",
@@ -235,7 +235,7 @@ export const translations = {
     "journal.art1.desc": "Présentation de l'excellence sénégalaise sur la scène mondiale. Notre stand a attiré des dignitaires et des distributeurs de toute l'Europe.",
     "journal.art2.title": "Annonce de Partenariat : Ministère de l'Agriculture",
     "journal.art2.desc": "Une alliance stratégique pour booster la capacité de production laitière locale dans la région de Saint-Louis.",
-    "journal.art3.title": "Saint Gourmet lance 'La Collection Or'",
+    "journal.art3.title": "Sain Gourmet lance 'La Collection Or'",
     "journal.art3.desc": "Un événement de dégustation exclusif tenu au Musée des Civilisations Noires.",
 
     // Contact
