@@ -11,9 +11,7 @@ const Tootank: React.FC = () => {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-tootank-green/20 rounded-l-[200px] hidden md:block"></div>
         <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl md:text-7xl font-sans font-bold text-tootank-green mb-6 tracking-tight">
-              {t('tt.hero.title')}
-            </h1>
+            <img src="/images/logos/logo tootank.png" alt="Toot'ank" className="h-32 md:h-48 mb-6" />
             <p className="text-xl text-stone-600 mb-8 font-medium">
               {t('tt.hero.desc')}
             </p>
@@ -22,10 +20,10 @@ const Tootank: React.FC = () => {
             </button>
           </div>
           <div className="relative">
-             <img src="/images/products/baby-food.jpg" alt="Happy Toddler" className="rounded-[50px] shadow-2xl border-8 border-white" />
-             <div className="absolute -bottom-10 -left-10 bg-yellow-400 text-stone-900 p-6 rounded-full font-bold shadow-lg animate-bounce">
-                <span className="block text-center">{t('tt.sticker')}</span>
-             </div>
+            <img src="/images/products/baby-food.jpg" alt="Happy Toddler" className="rounded-[50px] shadow-2xl border-8 border-white" />
+            <div className="absolute -bottom-10 -left-10 bg-yellow-400 text-stone-900 p-6 rounded-full font-bold shadow-lg animate-bounce">
+              <span className="block text-center">{t('tt.sticker')}</span>
+            </div>
           </div>
         </div>
       </section>
