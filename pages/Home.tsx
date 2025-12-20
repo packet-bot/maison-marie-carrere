@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   const { t } = useLanguage();
   return (
     <div className="w-full">
-      {/* Hero Section */}
+      {/* Hero Section - "Couture Signature" Style */}
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -19,21 +19,29 @@ const Home: React.FC = () => {
         </div>
 
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6">
-          <h2 className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 mt-5 text-mmc-gold fade-in">{t('home.hero.sub')}</h2>
+          {/* White Script Logo Image */}
           <img
-            src="/images/hero/logo-mcc2.png"
+            src="/Images et logos/hero-logo-white.png"
             alt="Maison Marie Carrère"
-            className="w-full mb-8 fade-in"
-            style={{
-              maxWidth: '632px',
-              filter: 'brightness(0) invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)'
-            }}
+            className="w-[350px] md:w-[550px] h-auto drop-shadow-lg fade-in"
           />
-          <p className="max-w-xl text-lg text-stone-200 mb-10 font-light fade-in">
+
+          {/* Anchor Subtitle - EST. SAINT-LOUIS */}
+          <span className="mt-4 text-sm uppercase tracking-[0.3em] text-[#D4AF37] font-sans fade-in">
+            EST. SAINT-LOUIS
+          </span>
+
+          {/* Main Tagline - White Sans-Serif */}
+          <p className="mt-2 text-sm md:text-base uppercase tracking-[0.2em] text-white font-sans font-medium mb-4 fade-in">
+            {t('home.hero.sub')}
+          </p>
+
+          <p className="max-w-xl text-lg text-white/90 mb-10 font-light font-sans fade-in">
             {t('home.hero.desc')}
           </p>
+
           <div className="flex flex-col md:flex-row gap-4 fade-in">
-            <Link to="/heritage" className="px-8 py-3 bg-mmc-gold text-black uppercase tracking-widest text-xs font-bold hover:bg-white transition-colors">
+            <Link to="/heritage" className="px-8 py-3 bg-[#D4AF37] text-black uppercase tracking-widest text-xs font-bold hover:bg-white transition-colors">
               {t('home.hero.btn.heritage')}
             </Link>
             <Link to="/process" className="px-8 py-3 border border-white text-white uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-colors">
@@ -47,7 +55,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Brand Gateway - The core navigation */}
+      {/* Brand Gateway - Museum Card Layout */}
       <section className="py-24 bg-mmc-cream">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -55,60 +63,69 @@ const Home: React.FC = () => {
             <h2 className="text-5xl font-serif font-bold text-mmc-navy mt-4">{t('home.portfolio.title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-2xl">
-            {/* Pleine Passion */}
-            <div className="group relative h-[500px] overflow-hidden">
-              <img
-                src="/images/products/milk-pp.jpg"
-                alt="Pleine Passion"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-mmc-navy/30 group-hover:bg-mmc-navy/50 transition-colors duration-300"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
-                <img src="/images/logos/Logo pleine passion.png" alt="Pleine Passion" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
-                <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6">
-                  {t('home.brand.pp.desc')}
-                </p>
-                <Link to="/pleine-passion" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 border-b border-white pb-1 flex items-center gap-2 uppercase text-xs tracking-widest hover:text-mmc-gold hover:border-mmc-gold">
-                  {t('home.brand.pp.btn')} <ArrowRight size={12} />
-                </Link>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Sain Gourmet - Luxury Positioning (Serif + Gold) */}
+            <div className="group flex flex-col bg-white shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              {/* Image Section - Clean, No Overlays */}
+              <div className="h-[400px] overflow-hidden">
+                <img
+                  src="/images/products/yogurt.jpg"
+                  alt="Sain Gourmet"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
-            </div>
-
-            {/* Sain Gourmet */}
-            <div className="group relative h-[500px] overflow-hidden border-l border-r border-white/20">
-              <img
-                src="/images/products/yogurt.jpg"
-                alt="Sain Gourmet"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
-                <span className="text-mmc-gold text-[10px] uppercase tracking-[0.3em] mb-2">{t('home.brand.sg.sub')}</span>
-                <img src="/images/logos/Logo Sain Gourmet.png" alt="Sain Gourmet" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
-                <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6 text-stone-300">
+              {/* Content Block - White Background */}
+              <div className="bg-white p-6 text-center flex-grow">
+                <span className="text-[#D4AF37] text-[10px] uppercase tracking-[0.3em] mb-2 block font-serif">{t('home.brand.sg.sub')}</span>
+                <h3 className="text-2xl font-serif uppercase tracking-wider text-[#D4AF37] mb-3">Sain Gourmet</h3>
+                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
                   {t('home.brand.sg.desc')}
                 </p>
-                <Link to="/sain-gourmet" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 border-b border-mmc-gold pb-1 flex items-center gap-2 uppercase text-xs tracking-widest text-mmc-gold">
+                <Link to="/sain-gourmet" className="inline-flex items-center gap-2 text-[#D4AF37] uppercase text-xs tracking-widest font-serif border-b border-[#D4AF37] pb-1 hover:text-[#b8993a] hover:border-[#b8993a] transition-colors">
                   {t('home.brand.sg.btn')} <ArrowRight size={12} />
                 </Link>
               </div>
             </div>
 
-            {/* Toot'ank */}
-            <div className="group relative h-[500px] overflow-hidden">
-              <img
-                src="/images/products/baby-food.jpg"
-                alt="Toot'ank"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-tootank-green/20 group-hover:bg-tootank-green/40 transition-colors duration-300"></div>
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white">
-                <img src="/images/logos/logo tootank.png" alt="Toot'ank" className="h-[164px] mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500" />
-                <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-xs text-sm mb-6 font-medium">
+            {/* Pleine Passion - Fresh/Market Positioning (Sans-Serif + Navy) */}
+            <div className="group flex flex-col bg-white shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              {/* Image Section - Clean, No Overlays */}
+              <div className="h-[400px] overflow-hidden">
+                <img
+                  src="/images/products/milk-pp.jpg"
+                  alt="Pleine Passion"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              {/* Content Block - White Background */}
+              <div className="bg-white p-6 text-center flex-grow">
+                <h3 className="text-2xl font-sans font-bold text-[#1e3a5f] mb-3">Pleine Passion</h3>
+                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
+                  {t('home.brand.pp.desc')}
+                </p>
+                <Link to="/pleine-passion" className="inline-flex items-center gap-2 text-[#1e3a5f] uppercase text-xs tracking-widest font-sans font-medium border-b border-[#1e3a5f] pb-1 hover:text-[#2d4a6f] hover:border-[#2d4a6f] transition-colors">
+                  {t('home.brand.pp.btn')} <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Toot'ank - Baby/Care Positioning (Rounded + Teal) */}
+            <div className="group flex flex-col bg-white shadow-lg overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              {/* Image Section - Clean, No Overlays */}
+              <div className="h-[400px] overflow-hidden rounded-t-2xl">
+                <img
+                  src="/images/products/baby-food.jpg"
+                  alt="Toot'ank"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              {/* Content Block - White Background */}
+              <div className="bg-white p-6 text-center flex-grow">
+                <h3 className="text-2xl font-bold text-[#2dd4bf] mb-3" style={{ fontFamily: "'Quicksand', 'Nunito', sans-serif" }}>toot'ank</h3>
+                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
                   {t('home.brand.tt.desc')}
                 </p>
-                <Link to="/tootank" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 bg-white text-tootank-green px-4 py-2 rounded-full uppercase text-xs tracking-widest font-bold hover:bg-tootank-yellow hover:text-white">
+                <Link to="/tootank" className="inline-flex items-center gap-2 bg-[#2dd4bf] text-white px-5 py-2 rounded-full text-xs tracking-widest font-bold hover:bg-[#14b8a6] transition-colors">
                   {t('home.brand.tt.btn')}
                 </Link>
               </div>
@@ -117,13 +134,13 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Corporate Intro */}
+      {/* Corporate Intro - Quote Section with Improved Legibility */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-serif text-mmc-navy mb-8 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-serif font-medium text-mmc-navy mb-8 leading-tight">
             {t('home.quote')}
           </h2>
-          <p className="text-stone-500 text-lg leading-relaxed mb-10">
+          <p className="text-stone-500 text-lg leading-relaxed mb-10 max-w-3xl mx-auto">
             {t('home.quote.desc')}
           </p>
 
