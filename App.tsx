@@ -23,6 +23,7 @@ const Navbar: React.FC = () => {
   const isLuxury = location.pathname.includes('sain-gourmet');
   const isHome = location.pathname === '/';
   const isPleinePassion = location.pathname.includes('pleine-passion');
+  const isProcess = location.pathname.includes('process');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +45,7 @@ const Navbar: React.FC = () => {
 
   const textClass = isScrolled
     ? isLuxury ? 'text-mmc-gold' : 'text-[#E87C3E]'
-    : isLuxury ? 'text-mmc-gold' : ((isHome || isPleinePassion) ? 'text-white' : 'text-mmc-navy');
+    : isLuxury ? 'text-mmc-gold' : ((isHome || isPleinePassion || isProcess) ? 'text-white' : 'text-mmc-navy');
 
   // Logo Logic
   // We use the single black logo and adapt it using CSS filters.
@@ -55,7 +56,7 @@ const Navbar: React.FC = () => {
   if (isLuxury) {
     // Gold (#C5A059)
     logoFilter = "invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)";
-  } else if ((isHome || isPleinePassion) && !isScrolled) {
+  } else if ((isHome || isPleinePassion || isProcess) && !isScrolled) {
     // White
     logoFilter = "brightness(0) invert(1)";
   } else if (isScrolled) {
