@@ -1,132 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maison Marie Carrère</title>
-    <!-- Playfair Display from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonts will be loaded from local files if available -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['NEXA', 'Arial', 'sans-serif'],
-              sans: ['Futura', 'Arial', 'sans-serif'],
-              script: ['Adage Script', 'cursive'],
-              playfair: ['Playfair Display', 'serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Maison Marie Carrère | Premium Senegalese Dairy & Leather Goods</title>
+  <meta name="title" content="Maison Marie Carrère | Premium Senegalese Dairy & Leather Goods" />
+  <meta name="description"
+    content="Maison Marie Carrère - A Senegalese family enterprise creating premium dairy products and artisan leather goods. Discover Pleine Passion, Sain Gourmet, and Tootank brands." />
+  <meta name="keywords"
+    content="Maison Marie Carrère, Senegal, dairy, leather, Pleine Passion, Sain Gourmet, Tootank, premium products, artisan, Africa" />
+  <meta name="author" content="Maison Marie Carrère" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0F172A" />
+  <meta name="msapplication-TileColor" content="#0F172A" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maisonmariecarrere.com/" />
+  <meta property="og:title" content="Maison Marie Carrère | Premium Senegalese Dairy & Leather Goods" />
+  <meta property="og:description"
+    content="A Senegalese family enterprise creating premium dairy products and artisan leather goods. Discover our brands: Pleine Passion, Sain Gourmet, and Tootank." />
+  <meta property="og:image" content="https://maisonmariecarrere.com/images/hero/logo-mcc2.png" />
+  <meta property="og:site_name" content="Maison Marie Carrère" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://maisonmariecarrere.com/" />
+  <meta property="twitter:title" content="Maison Marie Carrère | Premium Senegalese Dairy & Leather Goods" />
+  <meta property="twitter:description"
+    content="A Senegalese family enterprise creating premium dairy products and artisan leather goods." />
+  <meta property="twitter:image" content="https://maisonmariecarrere.com/images/hero/logo-mcc2.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/hero/logo-mcc2.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/hero/logo-mcc2.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/hero/logo-mcc2.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://maisonmariecarrere.com/" />
+
+  <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+  <!-- Google Fonts - Playfair Display -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN for now - consider migrating to build-time for production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['NEXA', 'Arial', 'sans-serif'],
+            sans: ['Futura', 'Arial', 'sans-serif'],
+            script: ['Adage Script', 'cursive'],
+            playfair: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            mmc: {
+              navy: '#0F172A',
+              gold: '#C5A059',
+              cream: '#F9F7F2',
+              charcoal: '#333333'
             },
-            colors: {
-              mmc: {
-                navy: '#0F172A',
-                gold: '#C5A059',
-                cream: '#F9F7F2',
-                charcoal: '#333333'
-              },
-              tootank: {
-                green: '#88B04B',
-                yellow: '#F7C948',
-                soft: '#F4F8F0'
-              }
+            tootank: {
+              green: '#88B04B',
+              yellow: '#F7C948',
+              soft: '#F4F8F0'
             }
           }
         }
       }
+    }
+  </script>
+
+  <style>
+    /* Critical CSS - Above the fold styles */
+    body {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Loading state */
+    #root:empty::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 100px auto;
+      border: 3px solid #C5A059;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spinner 0.8s linear infinite;
+    }
+
+    @keyframes spinner {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Custom Fonts */
+    @font-face {
+      font-family: 'NEXA';
+      src: url('/fonts/NEXA-Bold.woff2') format('woff2'),
+        url('/fonts/NEXA-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'NEXA';
+      src: url('/fonts/NEXA-Regular.woff2') format('woff2'),
+        url('/fonts/NEXA-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Futura';
+      src: url('/fonts/Futura.woff2') format('woff2'),
+        url('/fonts/Futura.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Adage Script';
+      src: url('/fonts/AdageScript.woff2') format('woff2'),
+        url('/fonts/AdageScript.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    /* Apply Playfair Display italic medium for all italic text */
+    em,
+    i,
+    .italic,
+    .font-serif.italic {
+      font-family: 'Playfair Display', serif !important;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    /* Gold to White gradient for hero logo */
+    .logo-gradient {
+      filter: brightness(1.2) contrast(1.1);
+    }
+
+    .logo-gradient::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #C5A059 0%, #FFFFFF 100%);
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Animations */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Maison Marie Carrère",
+        "url": "https://maisonmariecarrere.com",
+        "logo": "https://maisonmariecarrere.com/images/hero/logo-mcc2.png",
+        "description": "A Senegalese family enterprise creating premium dairy products and artisan leather goods.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dakar",
+          "addressCountry": "SN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@maisonmariecarrere.com",
+          "contactType": "customer service"
+        },
+        "sameAs": [
+          "https://www.instagram.com/maisonmariecarrere",
+          "https://www.linkedin.com/company/maisonmariecarrere",
+          "https://www.facebook.com/maisonmariecarrere"
+        ],
+        "brand": [
+          {
+            "@type": "Brand",
+            "name": "Pleine Passion",
+            "description": "Premium dairy products"
+          },
+          {
+            "@type": "Brand",
+            "name": "Sain Gourmet",
+            "description": "Luxury artisan goods"
+          },
+          {
+            "@type": "Brand",
+            "name": "Tootank",
+            "description": "Eco-friendly leather goods for children"
+          }
+        ]
+      }
     </script>
-    <style>
-      /* Custom Fonts */
-      @font-face {
-        font-family: 'NEXA';
-        src: url('/fonts/NEXA-Bold.woff2') format('woff2'),
-             url('/fonts/NEXA-Bold.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'NEXA';
-        src: url('/fonts/NEXA-Regular.woff2') format('woff2'),
-             url('/fonts/NEXA-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Futura';
-        src: url('/fonts/Futura.woff2') format('woff2'),
-             url('/fonts/Futura.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Adage Script';
-        src: url('/fonts/AdageScript.woff2') format('woff2'),
-             url('/fonts/AdageScript.woff') format('woff');
-        font-weight: normal;
-        font-style: italic;
-      }
 
-      /* Apply Playfair Display italic medium for all italic text */
-      em, i, .italic, .font-serif.italic {
-        font-family: 'Playfair Display', serif !important;
-        font-style: italic;
-        font-weight: 500;
-      }
-
-      /* Gold to White gradient for hero logo */
-      .logo-gradient {
-        filter: brightness(1.2) contrast(1.1);
-      }
-      .logo-gradient::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, #C5A059 0%, #FFFFFF 100%);
-        mix-blend-mode: overlay;
-        pointer-events: none;
-      }
-
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-      .fade-in {
-        animation: fadeIn 0.8s ease-in-out;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    </style>
   <script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
-  }
-}
-</script>
+      {
+        "imports": {
+          "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+        }
+      }
+    </script>
 </head>
-  <body class="bg-stone-50 text-slate-900 font-sans antialiased">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body class="bg-stone-50 text-slate-900 font-sans antialiased">
+  <!-- Noscript fallback -->
+  <noscript>
+    <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+      <h1>Maison Marie Carrère</h1>
+      <p>Please enable JavaScript to view this website.</p>
+    </div>
+  </noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
