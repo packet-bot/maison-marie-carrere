@@ -12,6 +12,8 @@ const PleinePassion: React.FC = () => {
           alt="Milk Pour"
           className="w-full h-full object-cover"
         />
+        {/* Scrim gradient for text readability */}
+        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Logo floating directly - no card background */}
           <div className="text-center">
@@ -20,7 +22,7 @@ const PleinePassion: React.FC = () => {
               alt="Pleine Passion"
               className="h-40 md:h-56 mx-auto mb-4 drop-shadow-xl"
             />
-            <p className="text-lg font-light tracking-wide text-white drop-shadow-md">{t('pp.hero.sub')}</p>
+            <p className="text-lg font-bold tracking-wide text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">{t('pp.hero.sub')}</p>
           </div>
         </div>
       </section>
