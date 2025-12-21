@@ -70,7 +70,71 @@ const PleinePassion: React.FC = () => {
         </div>
       </section>
 
-      {/* Task 3: Fashion & Leather (Lifestyle Section) - Fixed labels and navy buttons */}
+      {/* SECTION 1: THE GRANARY (Cereals) - Image Left / Text Right */}
+      <section className="py-24 bg-stone-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+            {/* Left: Image */}
+            <div className="h-[500px] lg:h-auto">
+              <img
+                src="/images/pleine-passion/pleine-passion-cereals-banner.jpeg"
+                alt="Cereals and Grains"
+                className="w-full h-full object-cover lg:rounded-r-2xl shadow-lg"
+              />
+            </div>
+            {/* Right: Text */}
+            <div className="self-center px-8 lg:px-16 py-12">
+              <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-3">Grains of the Sun</h2>
+              <p className="text-mmc-gold font-semibold tracking-wide mb-6">Thiakry • Fondé • Laakh</p>
+              <p className="text-stone-600 leading-relaxed text-lg">
+                Reinventing the classics of the Sahel. We select the finest local millet, rolled by hand and sun-dried,
+                to create the base of your favorite desserts. Combined with our fresh farm milk, our Thiakry and Laakh
+                offer the authentic taste of the terroir with a texture you won't find anywhere else.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: THE ORCHARD (Juices & Jams) */}
+      <section className="py-0">
+        {/* Hero Banner */}
+        <div className="relative w-full h-[400px]">
+          <img
+            src="/images/pleine-passion/pleine-passion-juice-banner.jpeg"
+            alt="Fresh Juices"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+            <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-xl text-center">
+              The Orchard's Harvest
+            </h2>
+          </div>
+        </div>
+
+        {/* Detail Block */}
+        <div className="max-w-7xl mx-auto py-20 px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div>
+              <p className="text-stone-600 leading-relaxed text-lg">
+                From the vibrant zest of Ditakh to the sweetness of Papaya, we bottle the essence of the season.
+                Our juices and jams are 100% natural, with no artificial additives—just the fruit, the sun, and our passion.
+              </p>
+            </div>
+            {/* Right: Jam Image */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src="/images/pleine-passion/pleine-passion-jam-detail.jpeg"
+                alt="Artisan Jams"
+                className="w-80 h-auto rounded-xl shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fashion & Leather (Lifestyle Section) */}
       <section className="bg-stone-100 py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -103,6 +167,44 @@ const PleinePassion: React.FC = () => {
                 <img src="/images/products/leather-2.jpg" alt="Nomad Backpack" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Nomad Backpack</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: CATERING & EVENTS */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div className="self-center lg:pr-8">
+              <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">Catering & Events</span>
+              <h2 className="text-4xl font-serif text-blue-900 font-semibold mt-2 mb-6">Celebrate with Passion</h2>
+              <p className="text-stone-600 leading-relaxed text-lg mb-8">
+                Whether it is a family baptism under the sun or a chic corporate cocktail, Pleine Passion brings
+                the flavor of Senegal to your reception. Discover our dedicated catering menu featuring golden
+                Fatayas, crispy Nems, and elegant Verrines.
+              </p>
+              <a
+                href="#"
+                className="inline-block bg-blue-900 text-white px-8 py-4 font-bold uppercase tracking-widest text-sm rounded hover:bg-blue-800 transition-colors"
+              >
+                Book Catering
+              </a>
+            </div>
+
+            {/* Right: Image Collage */}
+            <div className="relative grid grid-cols-2 gap-4">
+              <img
+                src="/images/pleine-passion/pleine-passion-catering-cocktail.jpeg"
+                alt="Cocktail Catering"
+                className="w-full h-64 object-cover rounded-lg shadow-xl"
+              />
+              <img
+                src="/images/pleine-passion/pleine-passion-catering-garden.jpeg"
+                alt="Garden Party Catering"
+                className="w-full h-64 object-cover rounded-lg shadow-xl translate-y-8"
+              />
             </div>
           </div>
         </div>
