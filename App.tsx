@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
       </div>
       {/* Soft gradient fade for smooth transition - only when scrolled */}
       {isScrolled && (
-        <div className="absolute -bottom-8 left-0 w-full h-8 bg-gradient-to-b from-white to-transparent z-40 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-b from-white/80 to-transparent z-40 pointer-events-none translate-y-full"></div>
       )}
 
       {/* Mobile Menu */}
