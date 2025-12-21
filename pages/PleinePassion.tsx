@@ -20,7 +20,7 @@ const PleinePassion: React.FC = () => {
               alt="Pleine Passion"
               className="h-40 md:h-56 mx-auto mb-4 drop-shadow-xl"
             />
-            <p className="text-lg font-light tracking-wide text-white drop-shadow-lg">{t('pp.hero.sub')}</p>
+            <p className="text-lg font-light tracking-wide text-blue-900 drop-shadow-sm">{t('pp.hero.sub')}</p>
           </div>
         </div>
       </section>
@@ -71,61 +71,51 @@ const PleinePassion: React.FC = () => {
       </section>
 
       {/* SECTION 1: THE GRANARY (Cereals) - Image Left / Text Right */}
-      <section className="py-24 bg-stone-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
-            <div className="h-[500px] lg:h-auto">
+            <div>
               <img
                 src="/images/pleine-passion/pleine-passion-cereals-banner.jpeg"
                 alt="Cereals and Grains"
-                className="w-full h-full object-cover lg:rounded-r-2xl shadow-lg"
+                className="w-full h-[500px] object-cover rounded-xl shadow-lg"
               />
             </div>
             {/* Right: Text */}
-            <div className="self-center px-8 lg:px-16 py-12">
-              <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-3">{t('pp.granary.title')}</h2>
-              <p className="text-mmc-gold font-semibold tracking-wide mb-6">{t('pp.granary.sub')}</p>
-              <p className="text-stone-600 leading-relaxed text-lg">
-                {t('pp.granary.desc')}
-              </p>
+            <div className="flex items-center">
+              <div>
+                <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-3">{t('pp.granary.title')}</h2>
+                <p className="text-mmc-gold font-semibold tracking-wide mb-6">{t('pp.granary.sub')}</p>
+                <p className="text-stone-600 leading-relaxed text-lg">
+                  {t('pp.granary.desc')}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2: THE ORCHARD (Juices & Jams) */}
-      <section className="py-0">
-        {/* Hero Banner */}
-        <div className="relative w-full h-[400px]">
-          <img
-            src="/images/pleine-passion/pleine-passion-juice-banner.jpeg"
-            alt="Fresh Juices"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 65%' }}
-          />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-            <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-xl text-center">
-              {t('pp.orchard.title')}
-            </h2>
-          </div>
-        </div>
-
-        {/* Detail Block */}
-        <div className="max-w-7xl mx-auto py-20 px-6">
+      {/* SECTION 2: THE ORCHARD (Juices & Jams) - Text Left / Image Right (Zig-Zag) */}
+      <section className="py-24 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
-            <div>
-              <p className="text-stone-600 leading-relaxed text-lg">
-                {t('pp.orchard.desc')}
-              </p>
+            <div className="flex items-center">
+              <div>
+                <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-6">{t('pp.orchard.title')}</h2>
+                <p className="text-stone-600 leading-relaxed text-lg">
+                  {t('pp.orchard.desc')}
+                </p>
+              </div>
             </div>
-            {/* Right: Jam Image */}
-            <div className="flex justify-center lg:justify-end">
+            {/* Right: Image */}
+            <div>
               <img
-                src="/images/pleine-passion/pleine-passion-jam-detail.jpeg"
-                alt="Artisan Jams"
-                className="w-80 h-auto rounded-xl shadow-xl"
+                src="/images/pleine-passion/pleine-passion-juice-banner.jpeg"
+                alt="Fresh Juices"
+                className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+                style={{ objectPosition: 'center 65%' }}
               />
             </div>
           </div>
