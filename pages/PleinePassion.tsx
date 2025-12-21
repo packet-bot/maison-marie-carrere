@@ -84,12 +84,10 @@ const PleinePassion: React.FC = () => {
             </div>
             {/* Right: Text */}
             <div className="self-center px-8 lg:px-16 py-12">
-              <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-3">Grains of the Sun</h2>
-              <p className="text-mmc-gold font-semibold tracking-wide mb-6">Thiakry • Fondé • Laakh</p>
+              <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-3">{t('pp.granary.title')}</h2>
+              <p className="text-mmc-gold font-semibold tracking-wide mb-6">{t('pp.granary.sub')}</p>
               <p className="text-stone-600 leading-relaxed text-lg">
-                Reinventing the classics of the Sahel. We select the finest local millet, rolled by hand and sun-dried,
-                to create the base of your favorite desserts. Combined with our fresh farm milk, our Thiakry and Laakh
-                offer the authentic taste of the terroir with a texture you won't find anywhere else.
+                {t('pp.granary.desc')}
               </p>
             </div>
           </div>
@@ -107,7 +105,7 @@ const PleinePassion: React.FC = () => {
           />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-xl text-center">
-              The Orchard's Harvest
+              {t('pp.orchard.title')}
             </h2>
           </div>
         </div>
@@ -118,8 +116,7 @@ const PleinePassion: React.FC = () => {
             {/* Left: Text */}
             <div>
               <p className="text-stone-600 leading-relaxed text-lg">
-                From the vibrant zest of Ditakh to the sweetness of Papaya, we bottle the essence of the season.
-                Our juices and jams are 100% natural, with no artificial additives—just the fruit, the sun, and our passion.
+                {t('pp.orchard.desc')}
               </p>
             </div>
             {/* Right: Jam Image */}
@@ -178,18 +175,16 @@ const PleinePassion: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div className="self-center lg:pr-8">
-              <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">Catering & Events</span>
-              <h2 className="text-4xl font-serif text-blue-900 font-semibold mt-2 mb-6">Celebrate with Passion</h2>
+              <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">{t('pp.catering.sub')}</span>
+              <h2 className="text-4xl font-serif text-blue-900 font-semibold mt-2 mb-6">{t('pp.catering.title')}</h2>
               <p className="text-stone-600 leading-relaxed text-lg mb-8">
-                Whether it is a family baptism under the sun or a chic corporate cocktail, Pleine Passion brings
-                the flavor of Senegal to your reception. Discover our dedicated catering menu featuring golden
-                Fatayas, crispy Nems, and elegant Verrines.
+                {t('pp.catering.desc')}
               </p>
               <a
                 href="#"
                 className="inline-block bg-blue-900 text-white px-8 py-4 font-bold uppercase tracking-widest text-sm rounded hover:bg-blue-800 transition-colors"
               >
-                Book Catering
+                {t('pp.catering.btn')}
               </a>
             </div>
 

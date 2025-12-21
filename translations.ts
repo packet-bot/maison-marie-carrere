@@ -107,6 +107,18 @@ export const translations = {
     "pp.fashion.item1": "The Saint-Louis Tote",
     "pp.fashion.item2": "Organic Cotton Tunics",
     "pp.fashion.item3": "Handcrafted Wallets",
+    // Granary Section
+    "pp.granary.title": "Grains of the Sun",
+    "pp.granary.sub": "Thiakry • Fondé • Laakh",
+    "pp.granary.desc": "Reinventing the classics of the Sahel. We select the finest local millet, rolled by hand and sun-dried, to create the base of your favorite desserts. Combined with our fresh farm milk, our Thiakry and Laakh offer the authentic taste of the terroir with a texture you won't find anywhere else.",
+    // Orchard Section
+    "pp.orchard.title": "The Orchard's Harvest",
+    "pp.orchard.desc": "From the vibrant zest of Ditakh to the sweetness of Papaya, we bottle the essence of the season. Our juices and jams are 100% natural, with no artificial additives—just the fruit, the sun, and our passion.",
+    // Catering Section
+    "pp.catering.sub": "Catering & Events",
+    "pp.catering.title": "Celebrate with Passion",
+    "pp.catering.desc": "Whether it is a family baptism under the sun or a chic corporate cocktail, Pleine Passion brings the flavor of Senegal to your reception. Discover our dedicated catering menu featuring golden Fatayas, crispy Nems, and elegant Verrines.",
+    "pp.catering.btn": "Book Catering",
 
     // Journal
     "journal.title": "Journal & Events",
@@ -243,6 +255,18 @@ export const translations = {
     "pp.fashion.item1": "Le Cabas Saint-Louis",
     "pp.fashion.item2": "Tuniques en Coton Bio",
     "pp.fashion.item3": "Portefeuilles Artisanaux",
+    // Granary Section
+    "pp.granary.title": "Grains de Soleil",
+    "pp.granary.sub": "Thiakry • Fondé • Laakh",
+    "pp.granary.desc": "Réinventer les classiques du Sahel. Nous sélectionnons le meilleur mil local, roulé à la main et séché au soleil, pour créer la base de vos desserts préférés. Combiné avec notre lait frais de la ferme, notre Thiakry et Laakh offrent le goût authentique du terroir avec une texture que vous ne trouverez nulle part ailleurs.",
+    // Orchard Section
+    "pp.orchard.title": "Les Récoltes du Verger",
+    "pp.orchard.desc": "Du zeste vibrant du Ditakh à la douceur de la Papaye, nous mettons en bouteille l'essence de la saison. Nos jus et confitures sont 100% naturels, sans additifs artificiels—juste le fruit, le soleil, et notre passion.",
+    // Catering Section
+    "pp.catering.sub": "Traiteur & Événements",
+    "pp.catering.title": "Célébrez avec Passion",
+    "pp.catering.desc": "Qu'il s'agisse d'un baptême familial sous le soleil ou d'un cocktail d'entreprise chic, Pleine Passion apporte la saveur du Sénégal à votre réception. Découvrez notre menu traiteur dédié avec des Fatayas dorées, des Nems croustillants et des Verrines élégantes.",
+    "pp.catering.btn": "Réserver Traiteur",
 
     // Journal
     "journal.title": "Journal & Événements",
@@ -379,6 +403,18 @@ export const translations = {
     "pp.fashion.item1": "Cabas Saint-Louis",
     "pp.fashion.item2": "Tuniques Coton Bio",
     "pp.fashion.item3": "Portefeuilles Artisanaux",
+    // Granary Section
+    "pp.granary.title": "Dugub ci Jant",
+    "pp.granary.sub": "Thiakry • Fondé • Laakh",
+    "pp.granary.desc": "Di soppi classiques yi ci Sahel. Ñu di tànn dugub bu gëna baax ci réew mi, ñu ko yengal ak loxo te yor ci jant, ngir sos base desserts yaw yi gëna bëgg. Bokk ak sunu meew bu yees ci tol bi, sunu Thiakry ak Laakh di jox goût bu dëgg bu terroir bi ak texture bu ngeen gënu gis fénn.",
+    // Orchard Section
+    "pp.orchard.title": "Récolte Verger bi",
+    "pp.orchard.desc": "Ci neex Ditakh ba ci sucré Papaay, ñu di tëj essence saison bi ci boutey. Sunu jus ak confitures mooy 100% naturel, amul additifs artificiels—fruit bi, jant bi, ak sunu bëgg-bëgg rekk.",
+    // Catering Section
+    "pp.catering.sub": "Traiteur & Événements",
+    "pp.catering.title": "Màggal ak Passion",
+    "pp.catering.desc": "Su fekkee ngonté ci mbokk walla cocktail ci entreprise bu rafet, Pleine Passion di indi neex Senegaal ci sa réception. Seet sunu menu traiteur bu am Fatayas wurus, Nems yu croustillants, ak Verrines yu rafet.",
+    "pp.catering.btn": "Réserver Traiteur",
 
     // Journal
     "journal.title": "Xibaarukaay & Événements",
