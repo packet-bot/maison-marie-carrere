@@ -114,8 +114,7 @@ const PleinePassion: React.FC = () => {
               <img
                 src="/images/pleine-passion/pleine-passion-juice-banner.jpeg"
                 alt="Fresh Juices"
-                className="w-full h-[500px] object-cover rounded-xl shadow-lg"
-                style={{ objectPosition: 'center 65%' }}
+                className="w-full h-[500px] object-cover object-bottom rounded-xl shadow-lg"
               />
             </div>
           </div>
