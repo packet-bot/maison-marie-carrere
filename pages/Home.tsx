@@ -135,12 +135,12 @@ const Home: React.FC = () => {
       </section>
 
       {/* Corporate Intro - Quote Section with Improved Legibility */}
-      <section className="py-24 bg-white">
+      <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-serif font-medium text-mmc-navy mb-8 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-[#1a1a1a] mb-10 leading-tight">
             {t('home.quote')}
           </h2>
-          <p className="text-stone-500 text-lg leading-relaxed mb-10 max-w-3xl mx-auto">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
             {t('home.quote.desc')}
           </p>
 
