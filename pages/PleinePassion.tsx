@@ -5,22 +5,22 @@ const PleinePassion: React.FC = () => {
   const { t } = useLanguage();
   return (
     <div className="w-full">
-      {/* Hero - Task 1: Glassmorphism card for logo */}
-      <section className="relative h-[80vh] min-h-screen">
+      {/* Hero - Logo floating on composed image */}
+      <section className="relative h-screen w-full">
         <img
-          src="/images/pleine-passion/pleine-passion-hero-breakfast.jpeg"
-          alt="Breakfast Table"
+          src="/images/pleine-passion/pleine-passion-hero-pour.jpeg"
+          alt="Milk Pour"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          {/* Glassmorphism Card */}
-          <div className="bg-white/30 backdrop-blur-md border border-white/50 rounded-xl p-8 shadow-xl max-w-md mx-auto text-center">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* Logo floating directly - no card background */}
+          <div className="text-center">
             <img
               src="/images/logos/Logo pleine passion.png"
               alt="Pleine Passion"
-              className="h-32 md:h-48 mx-auto mb-4"
+              className="h-40 md:h-56 mx-auto mb-4 drop-shadow-xl"
             />
-            <p className="text-lg font-light tracking-wide text-mmc-navy">{t('pp.hero.sub')}</p>
+            <p className="text-lg font-light tracking-wide text-white drop-shadow-lg">{t('pp.hero.sub')}</p>
           </div>
         </div>
       </section>
