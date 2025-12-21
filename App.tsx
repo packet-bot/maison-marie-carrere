@@ -101,22 +101,24 @@ const Navbar: React.FC = () => {
             {t('nav.contact')}
           </Link>
           <button
-            onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+            onClick={() => setLanguage(language === 'fr' ? 'en' : language === 'en' ? 'wo' : 'fr')}
             className={`ml-4 flex items-center text-xs tracking-widest hover:opacity-70 transition-opacity`}
           >
+            <span className={language === 'fr' ? 'font-bold' : 'opacity-50'}>FR</span>
+            <span className="mx-1">/</span>
             <span className={language === 'en' ? 'font-bold' : 'opacity-50'}>EN</span>
             <span className="mx-1">/</span>
-            <span className={language === 'fr' ? 'font-bold' : 'opacity-50'}>FR</span>
+            <span className={language === 'wo' ? 'font-bold text-[#D4AF37]' : 'opacity-50'}>WO</span>
           </button>
         </div>
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-4 md:hidden">
           <button
-            onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+            onClick={() => setLanguage(language === 'fr' ? 'en' : language === 'en' ? 'wo' : 'fr')}
             className={`text-xs tracking-widest ${textClass}`}
           >
-            <span className={language === 'en' ? 'font-bold' : 'opacity-50'}>EN</span> / <span className={language === 'fr' ? 'font-bold' : 'opacity-50'}>FR</span>
+            <span className={language === 'fr' ? 'font-bold' : 'opacity-50'}>FR</span> / <span className={language === 'en' ? 'font-bold' : 'opacity-50'}>EN</span> / <span className={language === 'wo' ? 'font-bold text-[#D4AF37]' : 'opacity-50'}>WO</span>
           </button>
           <button className={`${textClass}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
