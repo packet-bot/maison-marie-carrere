@@ -41,12 +41,13 @@ const Navbar: React.FC = () => {
 
   const navClass = `fixed w-full z-50 transition-all duration-300 ${isScrolled
     ? isLuxury ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg border-b border-mmc-gold/30' : 'bg-white/95 backdrop-blur-md py-4 shadow-md'
-    : 'bg-transparent py-6'
+    : 'bg-gradient-to-b from-black/50 to-transparent py-6'
     }`;
 
+  // All pages have white text when not scrolled (glassmorphism overlay)
   const textClass = isScrolled
     ? isLuxury ? 'text-mmc-gold' : 'text-[#E87C3E]'
-    : isLuxury ? 'text-mmc-gold' : ((isHome || isProcess || isHeritage) ? 'text-white' : 'text-mmc-navy');
+    : isLuxury ? 'text-mmc-gold' : 'text-white';
 
   // Logo Logic
   // We use the single black logo and adapt it using CSS filters.
@@ -57,15 +58,12 @@ const Navbar: React.FC = () => {
   if (isLuxury) {
     // Gold (#C5A059)
     logoFilter = "invert(76%) sepia(13%) saturate(1478%) hue-rotate(359deg) brightness(89%) contrast(88%)";
-  } else if ((isHome || isProcess || isHeritage) && !isScrolled) {
-    // White
+  } else if (!isScrolled) {
+    // White - glassmorphism overlay (all pages)
     logoFilter = "brightness(0) invert(1)";
-  } else if (isScrolled) {
+  } else {
     // Orange (#E87C3E) when scrolled on non-luxury pages
     logoFilter = "invert(58%) sepia(68%) saturate(640%) hue-rotate(342deg) brightness(95%) contrast(92%)";
-  } else {
-    // Navy (#0F172A) - transformed from black
-    logoFilter = "invert(8%) sepia(36%) saturate(1176%) hue-rotate(186deg) brightness(92%) contrast(96%)";
   }
 
   return (
@@ -126,10 +124,6 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-      {/* Soft gradient fade for smooth transition - only when scrolled */}
-      {isScrolled && (
-        <div className="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-b from-white/80 to-transparent z-40 pointer-events-none translate-y-full"></div>
-      )}
 
       {/* Mobile Menu */}
       {isMenuOpen && (
