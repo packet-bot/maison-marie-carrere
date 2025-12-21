@@ -119,6 +119,15 @@ export const translations = {
     "pp.catering.title": "Celebrate with Passion",
     "pp.catering.desc": "Whether it is a family baptism under the sun or a chic corporate cocktail, Pleine Passion brings the flavor of Senegal to your reception. Discover our dedicated catering menu featuring golden Fatayas, crispy Nems, and elegant Verrines.",
     "pp.catering.btn": "Book Catering",
+    // Atelier Gourmand Section
+    "pp.atelier.title": "L'Atelier Gourmand",
+    "pp.atelier.desc": "From our ovens to your table. Discover our spiced cheeses, specialty breads, and signature desserts.",
+    "pp.atelier.cheese.title": "La Fromagerie",
+    "pp.atelier.cheese.desc": "Fresh cheese rolled in Moringa, Zaatar, or Pink Pepper.",
+    "pp.atelier.bread.title": "La Boulangerie",
+    "pp.atelier.bread.desc": "Pain au Maïs, Son, & Moringa baked fresh daily.",
+    "pp.atelier.pastry.title": "Haute Pâtisserie",
+    "pp.atelier.pastry.desc": "Signature Bûches and Entremets for every celebration.",
 
     // Journal
     "journal.title": "Journal & Events",
@@ -267,6 +276,15 @@ export const translations = {
     "pp.catering.title": "Célébrez avec Passion",
     "pp.catering.desc": "Qu'il s'agisse d'un baptême familial sous le soleil ou d'un cocktail d'entreprise chic, Pleine Passion apporte la saveur du Sénégal à votre réception. Découvrez notre menu traiteur dédié avec des Fatayas dorées, des Nems croustillants et des Verrines élégantes.",
     "pp.catering.btn": "Réserver Traiteur",
+    // Atelier Gourmand Section
+    "pp.atelier.title": "L'Atelier Gourmand",
+    "pp.atelier.desc": "De nos fours à votre table. Découvrez nos fromages épicés, pains spéciaux et desserts signatures.",
+    "pp.atelier.cheese.title": "La Fromagerie",
+    "pp.atelier.cheese.desc": "Fromage frais roulé au Moringa, Zaatar ou Poivre Rose.",
+    "pp.atelier.bread.title": "La Boulangerie",
+    "pp.atelier.bread.desc": "Pain au Maïs, Son & Moringa cuit chaque jour.",
+    "pp.atelier.pastry.title": "Haute Pâtisserie",
+    "pp.atelier.pastry.desc": "Bûches et Entremets signatures pour chaque célébration.",
 
     // Journal
     "journal.title": "Journal & Événements",
@@ -415,6 +433,15 @@ export const translations = {
     "pp.catering.title": "Màggal ak Passion",
     "pp.catering.desc": "Su fekkee ngonté ci mbokk walla cocktail ci entreprise bu rafet, Pleine Passion di indi neex Senegaal ci sa réception. Seet sunu menu traiteur bu am Fatayas wurus, Nems yu croustillants, ak Verrines yu rafet.",
     "pp.catering.btn": "Réserver Traiteur",
+    // Atelier Gourmand Section
+    "pp.atelier.title": "Atelier Gourmand",
+    "pp.atelier.desc": "Ci sunu fuur ba ci sa taabalo. Seet sunu fromages épicés, pain ak desserts signatures.",
+    "pp.atelier.cheese.title": "Fromagerie",
+    "pp.atelier.cheese.desc": "Fromage bu yees bu ñu yengal ci Moringa, Zaatar walla Poivre Rose.",
+    "pp.atelier.bread.title": "Boulangerie",
+    "pp.atelier.bread.desc": "Pain Maïs, Son & Moringa bu ñu togg bés bu nekk.",
+    "pp.atelier.pastry.title": "Haute Pâtisserie",
+    "pp.atelier.pastry.desc": "Bûches ak Entremets signatures ngir célébration bu nekk.",
 
     // Journal
     "journal.title": "Xibaarukaay & Événements",

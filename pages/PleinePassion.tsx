@@ -123,6 +123,61 @@ const PleinePassion: React.FC = () => {
         </div>
       </section>
 
+      {/* SECTION: L'ATELIER GOURMAND (Bakery, Cheese, Pastry) */}
+      <section className="py-20 bg-[#F9F7F2]">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif text-blue-900 font-semibold mb-4">{t('pp.atelier.title')}</h2>
+            <p className="text-stone-600 max-w-2xl mx-auto">
+              {t('pp.atelier.desc')}
+            </p>
+          </div>
+
+          {/* 3-Card Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card 1: Cheese */}
+            <div className="group">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-md">
+                <img
+                  src="/images/pleine-passion/pleine-passion-cheese-spiced.jpeg"
+                  alt="Spiced Cheese"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.atelier.cheese.title')}</h3>
+              <p className="text-stone-500 text-sm text-center mt-1">{t('pp.atelier.cheese.desc')}</p>
+            </div>
+
+            {/* Card 2: Bread */}
+            <div className="group">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-md">
+                <img
+                  src="/images/pleine-passion/pleine-passion-bread-basket.jpeg"
+                  alt="Fresh Bread"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.atelier.bread.title')}</h3>
+              <p className="text-stone-500 text-sm text-center mt-1">{t('pp.atelier.bread.desc')}</p>
+            </div>
+
+            {/* Card 3: Pastry */}
+            <div className="group">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-md">
+                <img
+                  src="/images/pleine-passion/pleine-passion-patisserie-log.jpeg"
+                  alt="Signature Pastry"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.atelier.pastry.title')}</h3>
+              <p className="text-stone-500 text-sm text-center mt-1">{t('pp.atelier.pastry.desc')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Fashion & Leather (Lifestyle Section) */}
       <section className="bg-stone-100 py-24">
         <div className="max-w-7xl mx-auto px-6">
