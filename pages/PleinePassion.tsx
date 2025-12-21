@@ -101,7 +101,7 @@ const PleinePassion: React.FC = () => {
           <img
             src="/images/pleine-passion/pleine-passion-juice-banner.jpeg"
             alt="Fresh Juices"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-xl text-center">
