@@ -138,21 +138,21 @@ const PleinePassion: React.FC = () => {
             <div className="group cursor-pointer">
               <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
                 <img src="/images/products/leather-1.jpg" alt="Saint-Louis Sandal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Saint-Louis Sandal</div>
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">{t('pp.fashion.item1')}</div>
               </div>
             </div>
             {/* Tote Bag -> The Signature Tote */}
             <div className="group cursor-pointer md:mt-12">
               <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
                 <img src="/images/products/bag.jpg" alt="Signature Tote" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Signature Tote</div>
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">{t('pp.fashion.item2')}</div>
               </div>
             </div>
             {/* Backpack -> The Nomad Backpack */}
             <div className="group cursor-pointer">
               <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
                 <img src="/images/products/leather-2.jpg" alt="Nomad Backpack" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Nomad Backpack</div>
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">{t('pp.fashion.item3')}</div>
               </div>
             </div>
           </div>
