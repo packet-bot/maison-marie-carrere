@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const Heritage: React.FC = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   // Get the first paragraph text to extract the drop cap
   const firstParagraph = t('heritage.matriarch.desc1');
@@ -27,7 +27,7 @@ const Heritage: React.FC = () => {
         </div>
       </section>
 
-      {/* Text Container - Constrained Width for Readability */}
+      {/* ========== SECTION 1: The Soul of Saint-Louis (Grandmother) ========== */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           {/* Section Title */}
@@ -35,8 +35,15 @@ const Heritage: React.FC = () => {
             {t('heritage.matriarch.title')}
           </h2>
 
-          {/* Story Content - Readable Typography */}
+          {/* Story Content with Float Right Image */}
           <div className="text-gray-700 text-lg leading-relaxed font-sans">
+            {/* Vintage Marie Image - Float Right with Sepia */}
+            <img
+              src="/images/heritage/heritage-vintage-marie.jpeg"
+              alt="Marie Carrère"
+              className="float-right ml-8 mb-6 w-full md:w-5/12 rounded-lg shadow-lg grayscale sepia-[.25]"
+            />
+
             {/* First Paragraph with Drop Cap */}
             <p className="mb-6">
               <span className="float-left text-6xl font-serif text-[#D4AF37] mr-3 mt-1 leading-none">
@@ -48,24 +55,63 @@ const Heritage: React.FC = () => {
             <p className="mb-6">{t('heritage.matriarch.desc2')}</p>
 
             {/* Pull Quote - Magazine Style */}
-            <blockquote className="my-12 py-8 border-t-2 border-b-2 border-[#D4AF37] text-center">
+            <blockquote className="clear-both my-12 py-8 border-t-2 border-b-2 border-[#D4AF37] text-center">
               <p className="text-2xl md:text-3xl font-serif italic text-[#D4AF37]">
                 {t('heritage.quote')}
               </p>
             </blockquote>
 
             <p className="mb-6">{t('heritage.matriarch.desc3')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc4')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc5')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc6')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc7')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc8')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc9')}</p>
-            <p className="mb-6">{t('heritage.matriarch.desc10')}</p>
           </div>
+        </div>
+      </section>
 
-          {/* Stats Section */}
-          <div className="grid grid-cols-2 gap-8 mt-16 border-t border-stone-200 pt-10 max-w-md mx-auto text-center">
+      {/* ========== SECTION 2: The Rigor of Ndiawdoune (Full-Width Break) ========== */}
+      <img
+        src="/images/heritage/heritage-land-ndiawdoune.jpeg"
+        alt="The lands of Ndiawdoune"
+        className="w-full h-[50vh] object-cover my-16"
+      />
+
+      {/* Continue text after visual break */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-gray-700 text-lg leading-relaxed font-sans space-y-6">
+            <p>{t('heritage.matriarch.desc4')}</p>
+            <p>{t('heritage.matriarch.desc5')}</p>
+            <p>{t('heritage.matriarch.desc6')}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ========== SECTION 3: The Science & Future (Two-Column Grid) ========== */}
+      <section className="py-16 bg-mmc-cream">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Column: Text Content */}
+            <div className="text-gray-700 text-lg leading-relaxed font-sans space-y-6">
+              <p>{t('heritage.matriarch.desc7')}</p>
+              <p>{t('heritage.matriarch.desc8')}</p>
+              <p>{t('heritage.matriarch.desc9')}</p>
+              <p>{t('heritage.matriarch.desc10')}</p>
+            </div>
+
+            {/* Right Column: Science Lab Image */}
+            <div>
+              <img
+                src="/images/heritage/heritage-science-lab.jpeg"
+                alt="Research & Development Laboratory"
+                className="w-full rounded-xl shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="grid grid-cols-2 gap-8 border-t border-stone-200 pt-10 max-w-md mx-auto text-center">
             <div>
               <span className="block text-5xl font-serif text-[#D4AF37] mb-2">100%</span>
               <span className="text-sm uppercase tracking-widest text-stone-500 font-sans">{t('heritage.stat.owned')}</span>
