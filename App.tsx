@@ -126,6 +126,8 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
+      {/* Soft gradient fade for smooth transition */}
+      <div className="absolute -bottom-8 left-0 w-full h-8 bg-gradient-to-b from-white to-transparent z-40 pointer-events-none"></div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
