@@ -5,68 +5,103 @@ const PleinePassion: React.FC = () => {
   const { t } = useLanguage();
   return (
     <div className="w-full">
-      {/* Hero */}
-      <section className="relative h-[60vh]">
-        <img src="/images/products/milk.jpg" alt="Dairy Farm" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-mmc-navy/40 flex items-center justify-center">
-          <div className="text-center text-white">
-            <img src="/images/logos/Logo pleine passion.png" alt="Pleine Passion" className="h-32 md:h-48 mx-auto mb-4" />
-            <p className="text-xl font-light tracking-wide">{t('pp.hero.sub')}</p>
+      {/* Hero - Task 1: Glassmorphism card for logo */}
+      <section className="relative h-[80vh] min-h-screen">
+        <img
+          src="/images/pleine-passion/pleine-passion-hero-breakfast.jpeg"
+          alt="Breakfast Table"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          {/* Glassmorphism Card */}
+          <div className="bg-white/80 backdrop-blur-md rounded-xl p-8 shadow-xl max-w-md mx-auto text-center">
+            <img
+              src="/images/logos/Logo pleine passion.png"
+              alt="Pleine Passion"
+              className="h-32 md:h-48 mx-auto mb-4"
+            />
+            <p className="text-lg font-light tracking-wide text-mmc-navy">{t('pp.hero.sub')}</p>
           </div>
         </div>
       </section>
 
-      {/* Dairy Section */}
+      {/* Task 2: Product Grid - Freshness You Can Taste */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">{t('pp.creamery.sub')}</span>
-            <h2 className="text-4xl font-serif text-mmc-navy mt-2 mb-6">{t('pp.creamery.title')}</h2>
-            <p className="text-stone-600 leading-relaxed mb-6">
-              {t('pp.creamery.desc')}
-            </p>
-            <ul className="space-y-2 text-stone-600 mb-8">
-              <li className="flex items-center gap-2">• {t('pp.list.1')}</li>
-              <li className="flex items-center gap-2">• {t('pp.list.2')}</li>
-              <li className="flex items-center gap-2">• {t('pp.list.3')}</li>
-            </ul>
+        <div className="text-center mb-16">
+          <span className="text-mmc-gold uppercase tracking-widest text-xs font-bold">{t('pp.creamery.sub')}</span>
+          <h2 className="text-4xl font-serif text-blue-900 font-semibold mt-2 mb-6">{t('pp.creamery.title')}</h2>
+          <p className="text-stone-600 leading-relaxed max-w-2xl mx-auto">
+            {t('pp.creamery.desc')}
+          </p>
+        </div>
+
+        {/* Product Grid with Portrait Aspect Ratio (4:5) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="group">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src="/images/pleine-passion/pleine-passion-cheese-rustic.jpeg"
+                alt="Artisan Cheese"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.list.1')}</h3>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img src="/images/products/milk-pp.jpg" alt="Milk Pour" className="rounded-lg shadow-lg translate-y-8" />
-            <img src="/images/products/yogurt.jpg" alt="Yogurt" className="rounded-lg shadow-lg" />
+          <div className="group">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src="/images/pleine-passion/pleine-passion-ngalakh-dessert.jpeg"
+                alt="Ngalakh Dessert"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.list.2')}</h3>
+          </div>
+          <div className="group">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src="/images/pleine-passion/pleine-passion-mbaanik-farm.jpeg"
+                alt="Mbaanik Farm Fresh"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <h3 className="text-blue-900 font-semibold text-lg mt-4 text-center">{t('pp.list.3')}</h3>
           </div>
         </div>
       </section>
 
-      {/* Fashion & Leather (Maroquinerie) - The "Lookbook" feel */}
+      {/* Task 3: Fashion & Leather (Lifestyle Section) - Fixed labels and navy buttons */}
       <section className="bg-stone-100 py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-stone-500 uppercase tracking-widest text-xs font-bold">{t('pp.fashion.sub')}</span>
-            <h2 className="text-4xl font-serif text-mmc-navy mt-2">{t('pp.fashion.title')}</h2>
+            <h2 className="text-4xl font-serif text-blue-900 font-semibold mt-2">{t('pp.fashion.title')}</h2>
             <p className="text-stone-500 max-w-2xl mx-auto mt-4">
               {t('pp.fashion.desc')}
             </p>
           </div>
 
-          {/* Lookbook Grid */}
+          {/* Lookbook Grid with corrected labels */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Sandals -> The Saint-Louis Sandal */}
             <div className="group cursor-pointer">
-              <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="/images/products/leather-1.jpg" alt="Leather Bag" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item1')}</div>
+              <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
+                <img src="/images/products/leather-1.jpg" alt="Saint-Louis Sandal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Saint-Louis Sandal</div>
               </div>
             </div>
+            {/* Tote Bag -> The Signature Tote */}
             <div className="group cursor-pointer md:mt-12">
-              <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="/images/products/bag.jpg" alt="Linen Shirt" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item2')}</div>
+              <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
+                <img src="/images/products/bag.jpg" alt="Signature Tote" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Signature Tote</div>
               </div>
             </div>
+            {/* Backpack -> The Nomad Backpack */}
             <div className="group cursor-pointer">
-              <div className="h-[500px] overflow-hidden mb-4 relative">
-                <img src="/images/products/leather-2.jpg" alt="Accessories" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6 bg-white px-4 py-2 text-sm font-bold uppercase tracking-widest">{t('pp.fashion.item3')}</div>
+              <div className="h-[500px] overflow-hidden mb-4 relative rounded-2xl">
+                <img src="/images/products/leather-2.jpg" alt="Nomad Backpack" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-widest rounded">The Nomad Backpack</div>
               </div>
             </div>
           </div>
