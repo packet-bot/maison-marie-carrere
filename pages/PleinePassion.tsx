@@ -14,7 +14,7 @@ const PleinePassion: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           {/* Glassmorphism Card */}
-          <div className="bg-white/80 backdrop-blur-md rounded-xl p-8 shadow-xl max-w-md mx-auto text-center">
+          <div className="bg-white/30 backdrop-blur-md border border-white/50 rounded-xl p-8 shadow-xl max-w-md mx-auto text-center">
             <img
               src="/images/logos/Logo pleine passion.png"
               alt="Pleine Passion"
