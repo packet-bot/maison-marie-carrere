@@ -12,10 +12,10 @@ const Heritage: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero Banner - Full Width with Centered Title */}
-      <section className="relative h-[60vh] w-full overflow-hidden">
+      <section className="relative h-[80vh] w-full overflow-hidden">
         <img
-          src="/images/hero/saint-louis-market.jpg"
-          alt="Saint-Louis River"
+          src="/images/heritage/heritage-hero-balcony.jpeg"
+          alt="Saint-Louis Balcony at Golden Hour"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40"></div>
