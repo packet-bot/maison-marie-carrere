@@ -20,7 +20,7 @@ const PleinePassion: React.FC = () => {
               alt="Pleine Passion"
               className="h-40 md:h-56 mx-auto mb-4 drop-shadow-xl"
             />
-            <p className="text-lg font-light tracking-wide text-blue-900 drop-shadow-sm">{t('pp.hero.sub')}</p>
+            <p className="text-lg font-light tracking-wide text-white drop-shadow-md">{t('pp.hero.sub')}</p>
           </div>
         </div>
       </section>
