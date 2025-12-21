@@ -37,7 +37,7 @@ export const translations = {
 
     // Heritage
     "heritage.sub": "Our Story",
-    "heritage.title": "The Legacy of Saint-Louis: A Story of Heart and Taste",
+    "heritage.title": "The Soul of the House",
     "heritage.quote": "\"Goodness is even better when it is shared.\"",
     "heritage.matriarch.title": "The Legacy of Saint-Louis: A Story of Heart and Taste",
     "heritage.matriarch.desc1": "It all begins in Saint-Louis (Ndar), in the warmth of a house where the door was never closed. This is where Marie Carrère reigned. More than a grandmother, she was an institution, a philanthropist at heart for whom 'eating well' was above all an act of care and love.",
@@ -173,7 +173,7 @@ export const translations = {
 
     // Heritage
     "heritage.sub": "Notre Histoire",
-    "heritage.title": "L'Héritage de Saint-Louis : Une Histoire de Cœur et de Goût",
+    "heritage.title": "L'Âme de la Maison",
     "heritage.quote": "\"Le bon est encore meilleur quand il est partagé.\"",
     "heritage.matriarch.title": "L'Héritage de Saint-Louis : Une Histoire de Cœur et de Goût",
     "heritage.matriarch.desc1": "Tout commence à Saint-Louis (Ndar), dans la chaleur d'une maison où la porte ne se fermait jamais. C'est ici que régnait Marie Carrère. Plus qu'une grand-mère, elle était une institution, une philanthrope dans l'âme pour qui \u00ab bien manger \u00bb était avant tout un acte de soin et d'amour.",
@@ -309,7 +309,7 @@ export const translations = {
 
     // Heritage
     "heritage.sub": "Sunu Taariix",
-    "heritage.title": "Njàng bi ci Saint-Louis: Taariix bu Xol ak Neex",
+    "heritage.title": "Bakkan Kër Gi",
     "heritage.quote": "\"Baax gi baax lool su ñu ko séddoowul.\"",
     "heritage.matriarch.title": "Njàng bi ci Saint-Louis: Taariix bu Xol ak Neex",
     "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère nekk woon. Du rekk maam, dafa nekk benn céet, benn nit ku bëgg di jox ku am neen am amul, ku xalaat ne 'lekk gu baax' mooy jëfandikoo ak sogga.",
