@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6">
           {/* White Script Logo Image */}
           <img
-            src="/Images et logos/hero-logo-white.png"
+            src="/images/hero/hero-logo-white.png"
             alt="Maison Marie Carrère"
             className="w-[350px] md:w-[550px] h-auto drop-shadow-lg fade-in"
           />
