@@ -86,6 +86,17 @@ export const translations = {
     "sg.corporate.title": "Prestige & Partnership",
     "sg.corporate.desc": "Offer the best of Senegal to your partners. Custom gift boxes, branded packaging, and exclusive collections for your most valued relationships.",
     "sg.corporate.btn": "Contact Corporate Sales",
+    // Catalog
+    "sg.cat.all": "All",
+    "sg.cat.chocolats": "Chocolats",
+    "sg.cat.boucherie": "Haute Boucherie",
+    "sg.cat.cadeaux": "Cadeaux",
+    "sg.catalog.back": "Back to Sain Gourmet",
+    "sg.catalog.title": "La Collection Privée",
+    "sg.catalog.desc": "Exclusive creations from our artisan workshop. Limited editions, exceptional quality.",
+    "sg.catalog.cta.title": "Private Orders",
+    "sg.catalog.cta.desc": "For bespoke creations and corporate gifting, contact our team.",
+    "sg.catalog.cta.btn": "Request Quote",
 
     // Tootank
     "tt.hero.title": "Toot'ank",
@@ -162,6 +173,19 @@ export const translations = {
     "pp.catering.desc": "Whether it is a family baptism under the sun or a chic corporate cocktail, Pleine Passion brings the flavor of Senegal to your reception. Discover our dedicated catering menu featuring golden Fatayas, crispy Nems, and elegant Verrines.",
     "pp.catering.btn": "Book Catering",
     "pp.catering.menu": "Download Menu (PDF)",
+    // Catalog
+    "pp.cat.all": "All Products",
+    "pp.cat.dairy": "Dairy",
+    "pp.cat.cereals": "Cereals",
+    "pp.cat.juices": "Juices",
+    "pp.cat.leather": "Leather",
+    "pp.cat.catering": "Catering",
+    "pp.catalog.back": "Back to Pleine Passion",
+    "pp.catalog.title": "Nos Collections",
+    "pp.catalog.desc": "Explore our complete range of fresh local products. From dairy to artisanal leather, quality at every step.",
+    "pp.catalog.cta.title": "Need a Custom Order?",
+    "pp.catalog.cta.desc": "We offer bulk orders for businesses, restaurants, and events.",
+    "pp.catalog.cta.btn": "Contact Us",
     // Atelier Gourmand Section
     "pp.atelier.title": "L'Atelier Gourmand",
     "pp.atelier.desc": "From our ovens to your table. Discover our spiced cheeses, specialty breads, and signature desserts.",
@@ -286,6 +310,17 @@ export const translations = {
     "sg.corporate.title": "Prestige & Partenariat",
     "sg.corporate.desc": "Offrez le meilleur du Sénégal à vos partenaires. Coffrets cadeaux personnalisés, emballages marqués et collections exclusives pour vos relations les plus précieuses.",
     "sg.corporate.btn": "Contacter le Service Entreprises",
+    // Catalog
+    "sg.cat.all": "Tout",
+    "sg.cat.chocolats": "Chocolats",
+    "sg.cat.boucherie": "Haute Boucherie",
+    "sg.cat.cadeaux": "Cadeaux",
+    "sg.catalog.back": "Retour à Sain Gourmet",
+    "sg.catalog.title": "La Collection Privée",
+    "sg.catalog.desc": "Créations exclusives de notre atelier artisanal. Éditions limitées, qualité exceptionnelle.",
+    "sg.catalog.cta.title": "Commandes Privées",
+    "sg.catalog.cta.desc": "Pour des créations sur mesure et des cadeaux d'entreprise, contactez notre équipe.",
+    "sg.catalog.cta.btn": "Demander un Devis",
 
 
     // Tootank
@@ -363,6 +398,19 @@ export const translations = {
     "pp.catering.desc": "Qu'il s'agisse d'un baptême familial sous le soleil ou d'un cocktail d'entreprise chic, Pleine Passion apporte la saveur du Sénégal à votre réception. Découvrez notre menu traiteur dédié avec des Fatayas dorées, des Nems croustillants et des Verrines élégantes.",
     "pp.catering.btn": "Réserver Traiteur",
     "pp.catering.menu": "Télécharger le Menu (PDF)",
+    // Catalog
+    "pp.cat.all": "Tous les Produits",
+    "pp.cat.dairy": "Laiterie",
+    "pp.cat.cereals": "Céréales",
+    "pp.cat.juices": "Jus",
+    "pp.cat.leather": "Maroquinerie",
+    "pp.cat.catering": "Traiteur",
+    "pp.catalog.back": "Retour à Pleine Passion",
+    "pp.catalog.title": "Nos Collections",
+    "pp.catalog.desc": "Explorez notre gamme complète de produits locaux frais. Du lait à la maroquinerie artisanale, qualité à chaque étape.",
+    "pp.catalog.cta.title": "Commande Personnalisée?",
+    "pp.catalog.cta.desc": "Nous proposons des commandes en gros pour entreprises, restaurants et événements.",
+    "pp.catalog.cta.btn": "Nous Contacter",
     // Atelier Gourmand Section
     "pp.atelier.title": "L'Atelier Gourmand",
     "pp.atelier.desc": "De nos fours à votre table. Découvrez nos fromages épicés, pains spéciaux et desserts signatures.",
@@ -487,6 +535,17 @@ export const translations = {
     "sg.corporate.title": "Prestige & Partenariat",
     "sg.corporate.desc": "Jox yi gëna baax Senegaal ci partenaires yi. Coffrets cadeaux customisés, emballages marqués ak collections exclusives.",
     "sg.corporate.btn": "Contacter Service Entreprises",
+    // Catalog
+    "sg.cat.all": "Tout",
+    "sg.cat.chocolats": "Chocolats",
+    "sg.cat.boucherie": "Haute Boucherie",
+    "sg.cat.cadeaux": "Cadeaux",
+    "sg.catalog.back": "Déll Sain Gourmet",
+    "sg.catalog.title": "Collection Privée",
+    "sg.catalog.desc": "Créations exclusives ci sunu atelier artisanal. Éditions limitées, qualité bu am solo.",
+    "sg.catalog.cta.title": "Commandes Privées",
+    "sg.catalog.cta.desc": "Ngir créations sur mesure ak cadeaux entreprise, jokkoo ak sunu équipe.",
+    "sg.catalog.cta.btn": "Laaj Devis",
 
 
     // Tootank
@@ -564,6 +623,19 @@ export const translations = {
     "pp.catering.desc": "Su fekkee ngonté ci mbokk walla cocktail ci entreprise bu rafet, Pleine Passion di indi neex Senegaal ci sa réception. Seet sunu menu traiteur bu am Fatayas wurus, Nems yu croustillants, ak Verrines yu rafet.",
     "pp.catering.btn": "Réserver Traiteur",
     "pp.catering.menu": "Télécharger Menu (PDF)",
+    // Catalog
+    "pp.cat.all": "Produits yi",
+    "pp.cat.dairy": "Meew",
+    "pp.cat.cereals": "Céréales",
+    "pp.cat.juices": "Jus",
+    "pp.cat.leather": "Cuir",
+    "pp.cat.catering": "Traiteur",
+    "pp.catalog.back": "Déll Pleine Passion",
+    "pp.catalog.title": "Sunu Collections",
+    "pp.catalog.desc": "Seet sunu produits locaux yi yees. Ci meew ba cuir artisanal, qualité ci lépp.",
+    "pp.catalog.cta.title": "Soxla Commande?",
+    "pp.catalog.cta.desc": "Nu di jox commandes en gros ngir entreprises, restaurants ak événements.",
+    "pp.catalog.cta.btn": "Jokkoo ak Ñuñ",
     // Atelier Gourmand Section
     "pp.atelier.title": "Atelier Gourmand",
     "pp.atelier.desc": "Ci sunu fuur ba ci sa taabalo. Seet sunu fromages épicés, pain ak desserts signatures.",

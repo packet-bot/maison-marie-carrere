@@ -8,6 +8,8 @@ import SaintGourmet from './pages/SaintGourmet';
 import Tootank from './pages/Tootank';
 import TootankCatalog from './pages/TootankCatalog';
 import PleinePassion from './pages/PleinePassion';
+import PleinePassionCatalog from './pages/PleinePassionCatalog';
+import SainGourmetCatalog from './pages/SainGourmetCatalog';
 import Journal from './pages/Journal';
 import Contact from './pages/Contact';
 import { LanguageProvider, useLanguage } from './LanguageContext';
@@ -217,9 +219,11 @@ const App: React.FC = () => {
               <Route path="/heritage" element={<Heritage />} />
               <Route path="/process" element={<Process />} />
               <Route path="/sain-gourmet" element={<SaintGourmet />} />
+              <Route path="/sain-gourmet/catalog" element={<SainGourmetCatalog />} />
               <Route path="/tootank" element={<Tootank />} />
               <Route path="/tootank/catalog" element={<TootankCatalog />} />
               <Route path="/pleine-passion" element={<PleinePassion />} />
+              <Route path="/pleine-passion/catalog" element={<PleinePassionCatalog />} />
               <Route path="/journal" element={<Journal />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
