@@ -41,23 +41,23 @@ const TootankCatalog: React.FC = () => {
 
     return (
         <div className="bg-white w-full min-h-screen">
-            {/* Hero Header */}
-            <section className="bg-tootank-soft pt-24 pb-16">
-                <div className="container mx-auto px-6">
-                    <Link to="/tootank" className="text-tootank-green hover:underline text-sm mb-4 inline-block">
+            {/* Hero Header with Background Image */}
+            <section
+                className="relative h-[40vh] min-h-[300px] flex items-center justify-center bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/catalog-hero-tootank.jpg')" }}
+            >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-white/50"></div>
+
+                {/* Content */}
+                <div className="relative z-10 container mx-auto px-6 text-center">
+                    <Link to="/tootank" className="text-teal-800 hover:underline text-sm mb-4 inline-block">
                         ← {t('tt.catalog.back')}
                     </Link>
-                    {/* Toot'ank Logo v2 - Teal #2dd4bf like hero */}
-                    <img
-                        src="/images/logos/Tootank logo v2.png"
-                        alt="Toot'ank"
-                        className="h-auto max-w-md w-full object-contain mb-4 drop-shadow-sm"
-                        style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(52%) saturate(456%) hue-rotate(118deg) brightness(95%) contrast(91%)' }}
-                    />
-                    <h1 className="text-4xl md:text-5xl font-bold text-stone-800 mb-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-teal-900 mb-4 drop-shadow-sm">
                         {t('tt.catalog.title')}
                     </h1>
-                    <p className="text-stone-600 text-lg max-w-2xl">
+                    <p className="text-teal-800 text-lg max-w-2xl mx-auto drop-shadow-sm">
                         {t('tt.catalog.desc')}
                     </p>
                 </div>

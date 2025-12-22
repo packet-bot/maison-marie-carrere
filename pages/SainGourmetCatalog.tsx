@@ -34,16 +34,23 @@ const SainGourmetCatalog: React.FC = () => {
 
     return (
         <div className="bg-[#051F1A] min-h-screen w-full text-gray-300">
-            {/* Header */}
-            <section className="pt-28 pb-12">
-                <div className="max-w-6xl mx-auto px-6 text-center">
+            {/* Hero Header with Background Image */}
+            <section
+                className="relative h-[40vh] min-h-[300px] flex items-center justify-center bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/catalog-hero-sain-gourmet.jpg')" }}
+            >
+                {/* Dark Overlay for Gold Text */}
+                <div className="absolute inset-0 bg-black/60"></div>
+
+                {/* Content */}
+                <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
                     <Link to="/sain-gourmet" className="text-[#D4AF37] hover:underline text-sm mb-6 inline-block">
                         ← {t('sg.catalog.back')}
                     </Link>
                     <h1 className="text-4xl md:text-6xl font-serif text-[#D4AF37] mb-4">
                         {t('sg.catalog.title')}
                     </h1>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                    <p className="text-[#D4AF37]/80 text-lg max-w-2xl mx-auto">
                         {t('sg.catalog.desc')}
                     </p>
                 </div>

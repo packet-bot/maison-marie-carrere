@@ -73,16 +73,23 @@ const PleinePassionCatalog: React.FC = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen w-full">
-            {/* Header */}
-            <section className="bg-white pt-24 pb-12 border-b border-gray-100">
-                <div className="container mx-auto px-6">
+            {/* Hero Header with Background Image */}
+            <section
+                className="relative h-[40vh] min-h-[300px] flex items-center justify-center bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/catalog-hero-pleine-passion.jpg')" }}
+            >
+                {/* White Fade Overlay for Navy Text */}
+                <div className="absolute inset-0 bg-white/40"></div>
+
+                {/* Content */}
+                <div className="relative z-10 container mx-auto px-6 text-center">
                     <Link to="/pleine-passion" className="text-blue-900 hover:underline text-sm mb-4 inline-block">
                         ← {t('pp.catalog.back')}
                     </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 drop-shadow-sm">
                         {t('pp.catalog.title')}
                     </h1>
-                    <p className="text-gray-600 text-lg max-w-2xl">
+                    <p className="text-blue-800 text-lg max-w-2xl mx-auto drop-shadow-sm">
                         {t('pp.catalog.desc')}
                     </p>
                 </div>
