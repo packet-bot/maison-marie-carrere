@@ -67,6 +67,7 @@ export const translations = {
 
     // Saint Gourmet
     "sg.hero.sub": "L'ÉLÉGANCE DU TERROIR",
+    "sg.hero.btn": "Discover the Collection",
     "sg.intro": "Elevating local ingredients to the height of sophistication. Sain Gourmet is the jewel in our crown, offering pastries and delicacies that rival the finest Parisian salons, yet rooted in the soul of Senegal.",
     // Collection
     "sg.collection.title": "La Collection Le Carré",
@@ -294,6 +295,7 @@ export const translations = {
 
     // Saint Gourmet
     "sg.hero.sub": "L'ÉLÉGANCE DU TERROIR",
+    "sg.hero.btn": "Découvrir la Collection",
     "sg.intro": "Élever les ingrédients locaux au sommet du raffinement. Sain Gourmet est le joyau de notre couronne, offrant des pâtisseries et des délices qui rivalisent avec les plus grands salons parisiens.",
     // Collection
     "sg.collection.title": "La Collection Le Carré",
@@ -522,6 +524,7 @@ export const translations = {
 
     // Saint Gourmet
     "sg.hero.sub": "RAFET CI SUUF",
+    "sg.hero.btn": "Xool Collection bi",
     "sg.intro": "Yékiti mburu mi ci kaw rafet. Sain Gourmet mooy joyau couronne bi, di jox pâtisseries ak neex yi mën woon caq ak salons parisiens yi gëna rafet.",
     // Collection
     "sg.collection.title": "La Collection Le Carré",
