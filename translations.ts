@@ -505,7 +505,7 @@ export const translations = {
     // Heritage
     "heritage.sub": "Sunu Taariix",
     "heritage.title": "Bakkan Kër Gi",
-    "heritage.quote": "\"Baax gi baax lool su ñu ko séddoowul.\"",
+    "heritage.quote": "\"Baax gi gueun moy mbaax bu ñuy séddoo.\"",
     "heritage.matriarch.title": "Njàng bi ci Saint-Louis: Taariix bu Xol ak Neex",
     "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère doon sàmm. Du woon rekk benn maam, mooy woon benn institution, benn philanthrope bu am xol bu bëgg nit ñi, bu gis ne 'lekk bu baax' mooy njëkk acte bu soxla ak mbëggeel.",
     "heritage.matriarch.desc2": "Ci kër Marie Carrère, taabalo bi daan jub togg, jumtukaay ngir jogal mook, mook, xarit. Ci biir solo bii gu yàgg la yokku doom jabaram, Seynabou Diop Diouf. Lu gaaw, maam bii 'fin gourmet' jàngal na Seynabou dëgg dëgg ci li ñu lekk, jàngal ko ne lekk bu wóor lay laaj respect bu mat ci li suuf si di nu jox.",
