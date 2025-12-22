@@ -16,28 +16,16 @@ const SaintGourmet: React.FC = () => {
   return (
     <div className="bg-[#051F1A] text-gray-300 w-full">
       {/* ==================== SECTION 1: HERO ==================== */}
-      <section className="relative h-screen w-full flex items-center justify-center">
+      <section className="relative h-screen w-full">
         {/* Background Image with Heavy Overlay */}
         <img
           src="/images/sain-gourmet/sain-gourmet-hero.jpeg"
           alt="Sain Gourmet Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* Centered Content */}
-        <div className="relative z-10 text-center px-6">
-          <img
-            src="/images/logos/Logo Sain Gourmet.png"
-            alt="Sain Gourmet"
-            className="h-48 md:h-72 mx-auto mb-6"
-          />
-          <p className="text-[#D4AF37] tracking-[0.3em] uppercase text-sm md:text-base font-semibold">
-            {t('sg.hero.sub')}
-          </p>
-        </div>
-
-        {/* Au Lait Frais Badge - Corner */}
+        {/* Au Lait Frais Badge - Bottom Right Corner Only */}
         <div className="absolute bottom-8 right-8 z-10">
           <div className="border border-[#D4AF37] rounded-full px-4 py-2 text-[#D4AF37] text-xs tracking-widest uppercase backdrop-blur-sm bg-black/30">
             Au Lait Frais
@@ -59,7 +47,7 @@ const SaintGourmet: React.FC = () => {
           </div>
 
           {/* Collection Grid with Feature Image */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             {/* Left: Feature Image */}
             <div className="relative">
               <img
@@ -77,7 +65,7 @@ const SaintGourmet: React.FC = () => {
                   key={flavor.key}
                   className="bg-white/5 border border-[#D4AF37]/30 rounded-xl p-6 text-center hover:bg-white/10 transition-colors cursor-pointer group"
                 >
-                  <div className={`w-12 h-12 ${flavor.color} rounded-full mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform`}></div>
+                  <div className={`w-12 h-12 ${flavor.color} rounded-full mx-auto mb-4 shadow-lg border-2 border-[#D4AF37] group-hover:scale-110 transition-transform`}></div>
                   <h4 className="text-[#D4AF37] font-semibold text-sm tracking-wide">
                     {flavor.name}
                   </h4>
