@@ -6,6 +6,7 @@ import Heritage from './pages/Heritage';
 import Process from './pages/Process';
 import SaintGourmet from './pages/SaintGourmet';
 import Tootank from './pages/Tootank';
+import TootankCatalog from './pages/TootankCatalog';
 import PleinePassion from './pages/PleinePassion';
 import Journal from './pages/Journal';
 import Contact from './pages/Contact';
@@ -217,6 +218,7 @@ const App: React.FC = () => {
               <Route path="/process" element={<Process />} />
               <Route path="/sain-gourmet" element={<SaintGourmet />} />
               <Route path="/tootank" element={<Tootank />} />
+              <Route path="/tootank/catalog" element={<TootankCatalog />} />
               <Route path="/pleine-passion" element={<PleinePassion />} />
               <Route path="/journal" element={<Journal />} />
               <Route path="/contact" element={<Contact />} />

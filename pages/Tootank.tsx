@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Heart, ShieldCheck, Sun } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
@@ -15,9 +16,9 @@ const Tootank: React.FC = () => {
             <p className="text-xl text-stone-600 mb-8 font-medium">
               {t('tt.hero.desc')}
             </p>
-            <button className="bg-tootank-green text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-tootank-yellow hover:text-stone-800 transition-colors transform hover:-translate-y-1">
+            <Link to="/tootank/catalog" className="inline-block bg-tootank-green text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-tootank-yellow hover:text-stone-800 transition-colors transform hover:-translate-y-1">
               {t('tt.hero.btn')}
-            </button>
+            </Link>
           </div>
           <div className="relative">
             <img src="/images/products/baby-food.jpg" alt="Happy Toddler" className="rounded-[50px] shadow-2xl border-8 border-white" />

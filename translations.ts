@@ -102,6 +102,19 @@ export const translations = {
     "tt.fav.item.name": "Fruit Puree Mix",
     "tt.fav.item.desc": "Mango, Banana & Baobab",
     "tt.fav.btn": "View Details",
+    // Catalog
+    "tt.cat.all": "All",
+    "tt.cat.nutrition": "Nutrition",
+    "tt.cat.mode": "Fashion & Textile",
+    "tt.cat.mobilier": "Furniture & Toys",
+    "tt.cat.conseils": "Coaching & Workshops",
+    "tt.catalog.back": "Back to Toot'ank",
+    "tt.catalog.title": "L'Univers Toot'ank",
+    "tt.catalog.desc": "Discover our complete range of natural products for babies and young children. From nutritious meals to furniture, everything for a healthy start.",
+    "tt.catalog.viewbtn": "View Details",
+    "tt.catalog.cta.title": "Need Personalized Advice?",
+    "tt.catalog.cta.desc": "Our nutrition experts are here to guide you in choosing the best products for your little one.",
+    "tt.catalog.cta.btn": "Contact Us",
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
@@ -272,6 +285,19 @@ export const translations = {
     "tt.fav.item.name": "Mix Purée de Fruits",
     "tt.fav.item.desc": "Mangue, Banane & Baobab",
     "tt.fav.btn": "Voir Détails",
+    // Catalog
+    "tt.cat.all": "Tout",
+    "tt.cat.nutrition": "Nutrition",
+    "tt.cat.mode": "Mode & Textile",
+    "tt.cat.mobilier": "Mobilier & Éveil",
+    "tt.cat.conseils": "Conseils & Ateliers",
+    "tt.catalog.back": "Retour à Toot'ank",
+    "tt.catalog.title": "L'Univers Toot'ank",
+    "tt.catalog.desc": "Découvrez notre gamme complète de produits naturels pour bébés et jeunes enfants. Des repas nutritifs au mobilier, tout pour un départ sain.",
+    "tt.catalog.viewbtn": "Voir Détails",
+    "tt.catalog.cta.title": "Besoin de Conseils Personnalisés?",
+    "tt.catalog.cta.desc": "Nos experts en nutrition sont là pour vous guider dans le choix des meilleurs produits pour votre petit.",
+    "tt.catalog.cta.btn": "Nous Contacter",
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
@@ -442,6 +468,19 @@ export const translations = {
     "tt.fav.item.name": "Mix Purée Fruits",
     "tt.fav.item.desc": "Mango, Banaana & Bouye",
     "tt.fav.btn": "Xool Détails",
+    // Catalog
+    "tt.cat.all": "Tout",
+    "tt.cat.nutrition": "Nutrition",
+    "tt.cat.mode": "Mode & Textile",
+    "tt.cat.mobilier": "Mobilier & Éveil",
+    "tt.cat.conseils": "Conseils & Ateliers",
+    "tt.catalog.back": "Déll Toot'ank",
+    "tt.catalog.title": "L'Univers Toot'ank",
+    "tt.catalog.desc": "Seet sunu produits naturels ngir doom yu ndaw. Lekk bu baax ba mobilier, tout ngir démarrer bu baax.",
+    "tt.catalog.viewbtn": "Xool Détails",
+    "tt.catalog.cta.title": "Soxla Conseils?",
+    "tt.catalog.cta.desc": "Sunu experts nutrition ñëñoo fii ngir la jappale ci tollu yi gëna baax ngir sa doom.",
+    "tt.catalog.cta.btn": "Jokkoo ak Ñuñ",
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
