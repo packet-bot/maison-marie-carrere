@@ -42,7 +42,7 @@ const TootankCatalog: React.FC = () => {
     return (
         <div className="bg-white w-full min-h-screen">
             {/* Hero Header */}
-            <section className="bg-tootank-soft py-16">
+            <section className="bg-tootank-soft pt-24 pb-16">
                 <div className="container mx-auto px-6">
                     <Link to="/tootank" className="text-tootank-green hover:underline text-sm mb-4 inline-block">
                         ← {t('tt.catalog.back')}
@@ -65,8 +65,8 @@ const TootankCatalog: React.FC = () => {
                                 key={cat.key}
                                 onClick={() => setActiveCategory(cat.key as Category)}
                                 className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === cat.key
-                                        ? 'bg-tootank-green text-white shadow-lg'
-                                        : 'bg-stone-100 text-stone-600 hover:bg-tootank-soft'
+                                    ? 'bg-tootank-green text-white shadow-lg'
+                                    : 'bg-stone-100 text-stone-600 hover:bg-tootank-soft'
                                     }`}
                             >
                                 <span className="text-xl">{cat.icon}</span>
