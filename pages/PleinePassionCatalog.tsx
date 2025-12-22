@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-type Category = 'all' | 'dairy' | 'cereals' | 'juices' | 'leather' | 'catering';
+type Category = 'all' | 'lait' | 'fromages' | 'glaces' | 'boulangerie' | 'traiteur' | 'fastfood';
 
 const PleinePassionCatalog: React.FC = () => {
     const { t } = useLanguage();
@@ -11,29 +11,54 @@ const PleinePassionCatalog: React.FC = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const categories = [
-        { key: 'all', label: t('pp.cat.all') },
-        { key: 'dairy', label: t('pp.cat.dairy') },
-        { key: 'cereals', label: t('pp.cat.cereals') },
-        { key: 'juices', label: t('pp.cat.juices') },
-        { key: 'leather', label: t('pp.cat.leather') },
-        { key: 'catering', label: t('pp.cat.catering') },
+        { key: 'all', label: t('pp.cat.all'), icon: '🌟' },
+        { key: 'lait', label: t('pp.cat.lait'), icon: '🥛' },
+        { key: 'fromages', label: t('pp.cat.fromages'), icon: '🧀' },
+        { key: 'glaces', label: t('pp.cat.glaces'), icon: '🍦' },
+        { key: 'boulangerie', label: t('pp.cat.boulangerie'), icon: '🥐' },
+        { key: 'traiteur', label: t('pp.cat.traiteur'), icon: '🥟' },
+        { key: 'fastfood', label: t('pp.cat.fastfood'), icon: '🍔' },
     ];
 
     const products = [
-        { id: 1, name: 'Lait Frais Entier', category: 'dairy', weight: '1L', image: '/images/products/milk.jpg' },
-        { id: 2, name: 'Yaourt Nature', category: 'dairy', weight: '500g', image: '/images/products/yogurt.jpg' },
-        { id: 3, name: 'Fromage Affiné', category: 'dairy', weight: '250g', image: '/images/products/cheese.jpg' },
-        { id: 4, name: 'Crème Fraîche', category: 'dairy', weight: '200ml', image: '/images/products/milk.jpg' },
-        { id: 5, name: 'Céréales Petit-Déjeuner', category: 'cereals', weight: '400g', image: '/images/products/baby-food.jpg' },
-        { id: 6, name: 'Farine de Mil', category: 'cereals', weight: '1kg', image: '/images/products/baby-food.jpg' },
-        { id: 7, name: 'Flocons d\'Avoine', category: 'cereals', weight: '500g', image: '/images/products/baby-food.jpg' },
-        { id: 8, name: 'Jus de Bissap', category: 'juices', weight: '750ml', image: '/images/products/juice.jpg' },
-        { id: 9, name: 'Jus de Bouye', category: 'juices', weight: '750ml', image: '/images/products/juice.jpg' },
-        { id: 10, name: 'Jus de Gingembre', category: 'juices', weight: '500ml', image: '/images/products/juice.jpg' },
-        { id: 11, name: 'Sandale Saint-Louis', category: 'leather', weight: 'Artisanal', image: '/images/products/leather-1.jpg' },
-        { id: 12, name: 'Sac Signature', category: 'leather', weight: 'Artisanal', image: '/images/products/bag.jpg' },
-        { id: 13, name: 'Plateau Traiteur', category: 'catering', weight: '10 pers.', image: '/images/products/cheese.jpg' },
-        { id: 14, name: 'Buffet Événementiel', category: 'catering', weight: '50 pers.', image: '/images/products/cheese.jpg' },
+        // Lait & Yaourts
+        { id: 1, name: 'Lait Nature', category: 'lait', price: '1 500 XOF', unit: '/litre', image: '/images/products/milk.jpg' },
+        { id: 2, name: 'Lait Vanille', category: 'lait', price: '1 500 XOF', unit: '/litre', image: '/images/products/milk.jpg' },
+        { id: 3, name: 'Lait Chocolaté', category: 'lait', price: '2 000 XOF', unit: '/litre', image: '/images/products/milk.jpg' },
+        { id: 4, name: 'Yaourt à Boire', category: 'lait', price: '1 000 XOF', unit: '/250ml', image: '/images/products/yogurt.jpg' },
+        { id: 5, name: 'Yaourt Gourmand', category: 'lait', price: '500 XOF', unit: '/150g', image: '/images/products/yogurt.jpg' },
+        { id: 6, name: 'Yaourt sur Lit de Fruit', category: 'lait', price: '500 XOF', unit: '/250ml', image: '/images/products/yogurt.jpg' },
+        { id: 7, name: 'Zerik', category: 'lait', price: '500 XOF', unit: '/250ml', image: '/images/products/yogurt.jpg' },
+        // Fromages
+        { id: 8, name: 'Fromage Moringa', category: 'fromages', price: '13 000 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        { id: 9, name: 'Fromage Zaatar', category: 'fromages', price: '13 000 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        { id: 10, name: 'Fromage Thym-Cumin', category: 'fromages', price: '13 000 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        { id: 11, name: 'Fromage Mangue-Passion', category: 'fromages', price: '13 000 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        { id: 12, name: 'Labné', category: 'fromages', price: '11 500 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        { id: 13, name: 'Fromage Blanc Nature', category: 'fromages', price: '10 000 XOF', unit: '/kg', image: '/images/products/cheese.jpg' },
+        // Glaces
+        { id: 14, name: 'Glace Boule', category: 'glaces', price: '1 500 XOF', unit: '', image: '/images/products/milk.jpg' },
+        { id: 15, name: 'Glace Pot PM', category: 'glaces', price: '500 XOF', unit: '', image: '/images/products/milk.jpg' },
+        { id: 16, name: 'Glace Pot MM', category: 'glaces', price: '1 000 XOF', unit: '', image: '/images/products/milk.jpg' },
+        { id: 17, name: 'Glace Pot GM', category: 'glaces', price: '2 000 XOF', unit: '', image: '/images/products/milk.jpg' },
+        { id: 18, name: 'Glace Barquette 500g', category: 'glaces', price: '4 000 XOF', unit: '', image: '/images/products/milk.jpg' },
+        // Boulangerie
+        { id: 19, name: 'Pains Spéciaux', category: 'boulangerie', price: '800 XOF', unit: '/pack de 4', image: '/images/products/baby-food.jpg' },
+        { id: 20, name: 'Beignet Gourmet', category: 'boulangerie', price: '200 XOF', unit: '/pièce', image: '/images/products/baby-food.jpg' },
+        { id: 21, name: 'Beignet Fourré', category: 'boulangerie', price: '250 XOF', unit: '/pièce', image: '/images/products/baby-food.jpg' },
+        // Traiteur
+        { id: 22, name: 'Fataya Gourmand', category: 'traiteur', price: '200 XOF', unit: '/pièce', image: '/images/products/cheese.jpg' },
+        { id: 23, name: 'Pastel Poisson', category: 'traiteur', price: '200 XOF', unit: '/pièce', image: '/images/products/cheese.jpg' },
+        { id: 24, name: 'Nems Poulet/Viande', category: 'traiteur', price: '200 XOF', unit: '/pièce', image: '/images/products/cheese.jpg' },
+        { id: 25, name: 'Nems Crevettes', category: 'traiteur', price: '300 XOF', unit: '/pièce', image: '/images/products/cheese.jpg' },
+        { id: 26, name: 'Rissole Crevette', category: 'traiteur', price: '350 XOF', unit: '/pièce', image: '/images/products/cheese.jpg' },
+        // Fast Food
+        { id: 27, name: 'Tacos Mini', category: 'fastfood', price: '500 XOF', unit: '', image: '/images/products/baby-food.jpg' },
+        { id: 28, name: 'Tacos Maxi', category: 'fastfood', price: '2 000 XOF', unit: '', image: '/images/products/baby-food.jpg' },
+        { id: 29, name: 'Hamburger Mini', category: 'fastfood', price: '500 XOF', unit: '', image: '/images/products/baby-food.jpg' },
+        { id: 30, name: 'Hamburger Maxi', category: 'fastfood', price: '2 000 XOF', unit: '', image: '/images/products/baby-food.jpg' },
+        { id: 31, name: 'Chawarma Mini', category: 'fastfood', price: '500 XOF', unit: '', image: '/images/products/baby-food.jpg' },
+        { id: 32, name: 'Chawarma Maxi', category: 'fastfood', price: '1 800 XOF', unit: '', image: '/images/products/baby-food.jpg' },
     ];
 
     const filteredProducts = activeCategory === 'all'
@@ -85,12 +110,13 @@ const PleinePassionCatalog: React.FC = () => {
                                 <button
                                     key={cat.key}
                                     onClick={() => setActiveCategory(cat.key as Category)}
-                                    className={`whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === cat.key
+                                    className={`flex items-center gap-2 whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === cat.key
                                         ? 'bg-blue-900 text-white shadow-lg'
                                         : 'bg-white border border-gray-200 text-gray-600 hover:border-blue-900 hover:text-blue-900'
                                         }`}
                                 >
-                                    {cat.label}
+                                    <span>{cat.icon}</span>
+                                    <span>{cat.label}</span>
                                 </button>
                             ))}
                         </div>
@@ -122,14 +148,13 @@ const PleinePassionCatalog: React.FC = () => {
                                         alt={product.name}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
-                                    {/* Tag Badge */}
-                                    <span className="absolute top-3 left-3 bg-blue-900 text-white text-xs font-bold px-3 py-1 rounded-full">
-                                        {product.weight}
-                                    </span>
                                 </div>
                                 {/* Content */}
                                 <div className="p-5">
-                                    <h3 className="font-bold text-lg text-blue-900 mb-2">{product.name}</h3>
+                                    <h3 className="font-bold text-lg text-blue-900 mb-1">{product.name}</h3>
+                                    <p className="text-blue-600 font-bold text-lg mb-3">
+                                        {product.price}<span className="text-gray-400 text-sm font-normal">{product.unit}</span>
+                                    </p>
                                     <button className="w-full py-2 border-2 border-blue-900 text-blue-900 font-bold rounded-lg hover:bg-blue-900 hover:text-white transition-colors">
                                         {t('pp.catalog.viewbtn')}
                                     </button>
