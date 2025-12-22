@@ -103,7 +103,7 @@ const Tootank: React.FC = () => {
             {/* Right: Image */}
             <div className="relative order-1 lg:order-2">
               <img
-                src="/images/products/baby-food.jpg"
+                src="/images/tootank/tootank-fashion-nursery.jpeg"
                 alt="Baby Nursery"
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
