@@ -97,6 +97,7 @@ export const translations = {
     "sg.catalog.cta.title": "Private Orders",
     "sg.catalog.cta.desc": "For bespoke creations and corporate gifting, contact our team.",
     "sg.catalog.cta.btn": "Request Quote",
+    "sg.catalog.viewbtn": "View Details",
 
     // Tootank
     "tt.hero.title": "Toot'ank",
@@ -147,7 +148,8 @@ export const translations = {
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
-    "pp.hero.sub": "The Heart of Our Daily Life",
+    "pp.hero.sub": "Passion for Quality, Local Roots",
+    "pp.hero.btn": "Explore Collections",
     "pp.creamery.sub": "The Creamery",
     "pp.creamery.title": "Freshness You Can Taste",
     "pp.creamery.desc": "Pleine Passion represents our core promise: daily excellence. From fresh milk to artisanal yogurts, we control every step of the process. Our cows graze on local pastures, ensuring a richness that only nature can provide.",
@@ -186,6 +188,7 @@ export const translations = {
     "pp.catalog.cta.title": "Need a Custom Order?",
     "pp.catalog.cta.desc": "We offer bulk orders for businesses, restaurants, and events.",
     "pp.catalog.cta.btn": "Contact Us",
+    "pp.catalog.viewbtn": "View Details",
     // Atelier Gourmand Section
     "pp.atelier.title": "L'Atelier Gourmand",
     "pp.atelier.desc": "From our ovens to your table. Discover our spiced cheeses, specialty breads, and signature desserts.",
@@ -321,6 +324,7 @@ export const translations = {
     "sg.catalog.cta.title": "Commandes Privées",
     "sg.catalog.cta.desc": "Pour des créations sur mesure et des cadeaux d'entreprise, contactez notre équipe.",
     "sg.catalog.cta.btn": "Demander un Devis",
+    "sg.catalog.viewbtn": "Voir Détails",
 
 
     // Tootank
@@ -372,7 +376,8 @@ export const translations = {
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
-    "pp.hero.sub": "Le Cœur de Notre Quotidien",
+    "pp.hero.sub": "Passion pour la Qualité, Racines Locales",
+    "pp.hero.btn": "Explorer les Collections",
     "pp.creamery.sub": "La Crèmerie",
     "pp.creamery.title": "La Fraîcheur que vous Goûtez",
     "pp.creamery.desc": "Pleine Passion représente notre promesse fondamentale : l'excellence au quotidien. Du lait frais aux yaourts artisanaux, nous contrôlons chaque étape du processus. Nos vaches paissent dans des pâturages locaux, assurant une richesse que seule la nature peut offrir.",
@@ -411,6 +416,7 @@ export const translations = {
     "pp.catalog.cta.title": "Commande Personnalisée?",
     "pp.catalog.cta.desc": "Nous proposons des commandes en gros pour entreprises, restaurants et événements.",
     "pp.catalog.cta.btn": "Nous Contacter",
+    "pp.catalog.viewbtn": "Voir Détails",
     // Atelier Gourmand Section
     "pp.atelier.title": "L'Atelier Gourmand",
     "pp.atelier.desc": "De nos fours à votre table. Découvrez nos fromages épicés, pains spéciaux et desserts signatures.",
@@ -472,7 +478,7 @@ export const translations = {
     "home.hero.desc": "Njàng bu jëm ci Saint-Louis ak Gorée. Ñu bëgg a soppi mboolem mburu mi ci Senegaal ba mu nekk lu rafet, lu baax.",
     "home.hero.btn.heritage": "Sunu Njàng",
     "home.hero.btn.process": "Yoon wi",
-    "home.portfolio.sub": "Sunu Liggéey",
+    "home.portfolio.sub": "Notre Portefeuille",
     "home.portfolio.title": "Ndamam bu ñu tànn",
     "home.brand.pp.desc": "Meew ak yaay yu yees, yu bari rafet, yu ñu def ak bëgg-bëgg.",
     "home.brand.pp.btn": "Seet",
@@ -489,16 +495,16 @@ export const translations = {
     "heritage.title": "Bakkan Kër Gi",
     "heritage.quote": "\"Baax gi baax lool su ñu ko séddoowul.\"",
     "heritage.matriarch.title": "Njàng bi ci Saint-Louis: Taariix bu Xol ak Neex",
-    "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère nekk woon. Du rekk maam, dafa nekk benn céet, benn nit ku bëgg di jox ku am neen am amul, ku xalaat ne 'lekk gu baax' mooy jëfandikoo ak sogga.",
+    "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère nekk woon. Plus qu'une grand-mère, elle était une institution, une philanthrope dans l'âme pour qui \u00ab bien manger \u00bb était avant tout un acte de soin et d'amour.",
     "heritage.matriarch.desc2": "Ci kër Marie Carrère, taabalo bi daan jub togg, jumtukaay ngir jogal mook, mook, xarit. Ci biir solo bii gu yàgg la yokku doom jabaram, Seynabou Diop Diouf. Lu gaaw, maam bii 'fin gourmet' jàngal na Seynabou dëgg dëgg ci li ñu lekk, jàngal ko ne lekk bu wóor lay laaj gudd ak suuf si.",
-    "heritage.matriarch.desc3": "Waaye njàng bii amoon na ñaareel reeti, ci suuf Ndiawdoune. Ci kiloomeetar yu tuuti, baay Seynabou, ku bëgg yéene, moo sa moom ci jaww yàpp yam. Moo ko jàngal wudd bi. Moo ko jàngal ne yéefal yàpp walla bari meew duñu jël: ñu ko def ci tol bi, ak muñ ak xam-xam.",
-    "heritage.matriarch.desc4": "Su dund bi mujj Seynabou ci wudd cër yi ak comptabilité, njàng bi ci aada buuy ñaari suuf yii jottali ko. Ci atum 2000, benn xalaat tambali na ci bopp bi: sos benn Kër bu joxe sañ-sañ bu baax ci xam-xam bii. Waaye Seynabou, jëm ci njàng baay bi, xam na ne bëgg-bëgg rekk du doy ngir gëna baax; war na nekk ku xam lu rafet.",
-    "heritage.matriarch.desc5": "Moo tax mu tànn jàng. Mu yégg yoonu liggéey yi, mu dellu ci jàng ngir xam bu baax bu rafet ci agroalimentaire. Mu soppi taaliyam yi ci microbiologie ak yoonu transformation, xam ne ngir nga soppi mburu mi, war ngaa xam ilim bu mu am.",
-    "heritage.matriarch.desc6": "Ci 2006, Seynabou sos Pleine Passion. Du rekk entreprise bu mu sos, dafa sàkku alchimie bu xale bi: soppi mango ak meew ci neex ngir yaram ak xel.",
-    "heritage.matriarch.desc7": "Ci atelier yam, mënul jël dara am xam-xam. Recherche & Développement bi xëm na ci kaw. Yaourt yam, misaal, ñu def nanu ak souches ferments yu ñu tànn ci at yi. Mii science bu ñu gënu bu jox goût bu mënul ñu am fénn eenn.",
-    "heritage.matriarch.desc8": "Ndax Marie Carrère daan xool nit ñi ci yokkuté gu yàgg, Toot'ank juddu ci woon ngir aar xale yu nuyu, jëfandikoo wudd biibii ci nutrition des bébés.",
-    "heritage.matriarch.desc9": "Taariix bi dellusi at yi ginnaaw. Bi entreprise bi doon yokku, Seynabou gis na ci 2012 ne war na jëm ci kanam: sos benn vitrine ngir kaw-kaw. Waaye jëm ci yoon bam, bànneex na gaaw. Mu jël waxtu ngir developpe ak perfectionne recettes yam. Ci 2023 rekk rekk, bi formule bi rafet, wudd maam bi am na expression bam gu mujj ak juddu Sain Gourmet.",
-    "heritage.matriarch.desc10": "Tey, Kër Marie Carrère mooy prolongement taabalo Saint-Louis bi. Benn kër bu tàbbalul ci conviction bu tiis ne 'baax gi baax lool su ñu ko séddoowul', bokk tangaay xalaat xale bi ak précision scientifique industrie moderne bi.",
+    "heritage.matriarch.desc3": "Mais cet héritage avait une seconde racine, ancrée dans la terre brute de Ndiawdoune. À quelques kilomètres de là, le père de Seynabou, éleveur passionné, régnait sur ses troupeaux. C'est lui, par son exigence absolue, qui lui a transmis la rigueur. Il lui a appris que la tendresse d'une viande ou la richesse d'un lait ne sont pas des hasards : ce sont des résultats qui se construisent au champ, avec patience et technique.",
+    "heritage.matriarch.desc4": "Si la vie a d'abord mené Seynabou vers la rigueur des chiffres et de la comptabilité, l'héritage de cette double culture a fini par la rattraper. Dès l'an 2000, une idée avait germé dans son esprit : créer une Maison qui rendrait justice à ce savoir-faire. Mais Seynabou, fidèle à l'enseignement paternel, savait qu'il ne suffisait pas d'être une passionnée pour exceller ; il fallait devenir une experte.",
+    "heritage.matriarch.desc5": "C'est pourquoi elle a choisi l'humilité de l'apprentissage. Mettant sa carrière entre parenthèses, elle est retournée sur les bancs de l'école pour se former rigoureusement en agroalimentaire. Elle a troqué ses bilans comptables contre la microbiologie et les processus de transformation, comprenant que pour sublimer la nature, il faut en maîtriser la science.",
+    "heritage.matriarch.desc6": "En 2006, portée par cette mémoire vivante et ce savoir acquis, Seynabou fonde Pleine Passion. Elle ne crée pas seulement une entreprise, elle recrée l'alchimie de son enfance : transformer les fruits du verger et le lait de la ferme en délices pour le corps et l'esprit.",
+    "heritage.matriarch.desc7": "Dans ses ateliers, elle ne laisse rien au hasard. Sa Recherche \u0026 Développement est poussée à l'extrême. Ses yaourts, par exemple, sont élaborés à partir de souches de ferments spécifiques, travaillées et sélectionnées au fil des années. C'est cette science invisible qui donne cette signature gustative inimitable.",
+    "heritage.matriarch.desc8": "Parce que Marie Carrère veillait sur les siens avec une tendresse infinie, Toot'ank est né naturellement pour protéger les plus petits, appliquant cette même rigueur scientifique à la nutrition infantile.",
+    "heritage.matriarch.desc9": "L'histoire se répète quelques années plus tard. Alors que l'entreprise prospère, Seynabou perçoit dès 2012 le besoin d'aller plus loin : créer un écrin pour le très haut de gamme. Mais fidèle à sa méthode, elle refuse la précipitation. Elle prend le temps de développer et parfaire ses recettes. Ce n'est qu'en 2023, une fois la formule parfaite atteinte, que l'exigence de la grand-mère trouve son ultime expression avec la naissance de Sain Gourmet.",
+    "heritage.matriarch.desc10": "Aujourd'hui, Maison Marie Carrère est le prolongement de cette table saint-louisienne. Une maison bâtie sur la conviction profonde que \u00ab le bon est encore meilleur quand il est partagé \u00bb, alliant la chaleur d'un souvenir d'enfance à la précision scientifique de l'industrie moderne.",
     "heritage.stat.owned": "Senegaalnaako moom",
     "heritage.stat.generations": "Xeetu Ndamam",
 
@@ -528,7 +534,7 @@ export const translations = {
     // Boucherie
     "sg.boucherie.sub": "La Haute Boucherie",
     "sg.boucherie.title": "Taabalo bu Rafet",
-    "sg.boucherie.desc": "Seetlu neex fête bi. Ci Chapon farci ba Foie Gras, yàpp yi ñu magi Ndiawdoune ak muñ ak respect. Lu nekk di wax aada ak rafet.",
+    "sg.boucherie.desc": "Seetlu neex fête bi. Ci Chapon farci ba Foie Gras, yàpp yi ñu magi Ndiawdoune ak muñ ak respect. Chaque pièce raconte une histoire d'héritage et d'excellence.",
     "sg.boucherie.btn": "Télécharger Menu Festif",
     // Corporate
     "sg.corporate.sub": "Cadeaux Entreprise",
@@ -546,11 +552,12 @@ export const translations = {
     "sg.catalog.cta.title": "Commandes Privées",
     "sg.catalog.cta.desc": "Ngir créations sur mesure ak cadeaux entreprise, jokkoo ak sunu équipe.",
     "sg.catalog.cta.btn": "Laaj Devis",
+    "sg.catalog.viewbtn": "Xool Détails",
 
 
     // Tootank
     "tt.hero.title": "Toot'ank",
-    "tt.hero.desc": "Mag ak doole, naturellement. Lekk gu baax ngir chefs yi ci kanam ci Senegaal, ñu def ak récoltes locale yi gëna baax.",
+    "tt.hero.desc": "Mag ak doole, naturellement. Des repas nutritifs pour les futurs leaders du Sénégal, faits à partir des meilleures récoltes locales.",
     "tt.hero.btn": "Seet Produits yi",
     "tt.sticker": "100% Naturel",
     "tt.hero.tagline": "Mag Bu Wer, Mag Ci Suuf.",
@@ -562,7 +569,7 @@ export const translations = {
     // Lifestyle Section
     "tt.lifestyle.sub": "La Garde-Robe",
     "tt.lifestyle.title": "Noppal ngir Yaram yu Rafet",
-    "tt.lifestyle.desc": "Yère ak essentiels yi ñu def ak leru yi gëna noppal. Noppal ngir doom, noppal ngir suuf.",
+    "tt.lifestyle.desc": "Yère ak essentiels yi ñu def ak leru yi gëna noppal. Doux pour bébé, doux pour la planète.",
     "tt.lifestyle.btn": "Xool Collection",
     // Community Section
     "tt.community.sub": "Coaching & Ateliers",
@@ -597,10 +604,11 @@ export const translations = {
 
     // Pleine Passion
     "pp.hero.title": "Pleine Passion",
-    "pp.hero.sub": "Xol Sunu Bés Bu Nekk",
+    "pp.hero.sub": "Passion ngir Qualité, Rasin ci Suuf",
+    "pp.hero.btn": "Xool Collections yi",
     "pp.creamery.sub": "Crèmerie bi",
     "pp.creamery.title": "Fraîcheur bu Ngeen Di Naan",
-    "pp.creamery.desc": "Pleine Passion mooy sunu kàddu bu ñu gëna am solo: ndamam bés bu nekk. Meew bu yees ba yaourt artisanaux, ñu contrôler étape bu nekk ci yoon wi. Sunu nag yi di lekk ci pâturages locale, di wóor bari bu mburu rekk mën di jox.",
+    "pp.creamery.desc": "Pleine Passion mooy sunu kàddu bu ñu gëna am solo: ndamam bés bu nekk. Du lait frais aux yaourts artisanaux, ñu contrôler chaque étape du processus. Sunu nag yi di lekk ci pâturages locale, di wóor bari bu mburu rekk mën di jox.",
     "pp.list.1": "Meew 100% Senegaal",
     "pp.list.2": "Amul Conservateurs Artificiels",
     "pp.list.3": "Yoonu Fermentation Traditionnel",
@@ -636,6 +644,7 @@ export const translations = {
     "pp.catalog.cta.title": "Soxla Commande?",
     "pp.catalog.cta.desc": "Nu di jox commandes en gros ngir entreprises, restaurants ak événements.",
     "pp.catalog.cta.btn": "Jokkoo ak Ñuñ",
+    "pp.catalog.viewbtn": "Xool Détails",
     // Atelier Gourmand Section
     "pp.atelier.title": "Atelier Gourmand",
     "pp.atelier.desc": "Ci sunu fuur ba ci sa taabalo. Seet sunu fromages épicés, pain ak desserts signatures.",

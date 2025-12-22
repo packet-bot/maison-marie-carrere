@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 
 const PleinePassion: React.FC = () => {
@@ -22,7 +23,13 @@ const PleinePassion: React.FC = () => {
               alt="Pleine Passion"
               className="h-40 md:h-56 mx-auto mb-4 drop-shadow-xl"
             />
-            <p className="text-lg font-bold tracking-wide text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">{t('pp.hero.sub')}</p>
+            <p className="text-lg font-bold tracking-wide text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-6">{t('pp.hero.sub')}</p>
+            <Link
+              to="/pleine-passion/catalog"
+              className="inline-block bg-blue-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-800 transition-colors shadow-xl"
+            >
+              {t('pp.hero.btn')}
+            </Link>
           </div>
         </div>
       </section>

@@ -86,8 +86,8 @@ const PleinePassionCatalog: React.FC = () => {
                                     key={cat.key}
                                     onClick={() => setActiveCategory(cat.key as Category)}
                                     className={`whitespace-nowrap px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === cat.key
-                                            ? 'bg-blue-900 text-white shadow-lg'
-                                            : 'bg-white border border-gray-200 text-gray-600 hover:border-blue-900 hover:text-blue-900'
+                                        ? 'bg-blue-900 text-white shadow-lg'
+                                        : 'bg-white border border-gray-200 text-gray-600 hover:border-blue-900 hover:text-blue-900'
                                         }`}
                                 >
                                     {cat.label}
@@ -107,26 +107,32 @@ const PleinePassionCatalog: React.FC = () => {
             </section>
 
             {/* Product Grid */}
-            <section className="py-12">
+            <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                         {filteredProducts.map((product) => (
                             <div
                                 key={product.id}
-                                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group"
                             >
                                 {/* Image */}
-                                <div className="aspect-square bg-gray-100 overflow-hidden">
+                                <div className="h-52 bg-gray-100 overflow-hidden relative">
                                     <img
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
+                                    {/* Tag Badge */}
+                                    <span className="absolute top-3 left-3 bg-blue-900 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                        {product.weight}
+                                    </span>
                                 </div>
                                 {/* Content */}
-                                <div className="p-4">
-                                    <h3 className="font-bold text-blue-900 mb-1 truncate">{product.name}</h3>
-                                    <p className="text-gray-500 text-sm">{product.weight}</p>
+                                <div className="p-5">
+                                    <h3 className="font-bold text-lg text-blue-900 mb-2">{product.name}</h3>
+                                    <button className="w-full py-2 border-2 border-blue-900 text-blue-900 font-bold rounded-lg hover:bg-blue-900 hover:text-white transition-colors">
+                                        {t('pp.catalog.viewbtn')}
+                                    </button>
                                 </div>
                             </div>
                         ))}

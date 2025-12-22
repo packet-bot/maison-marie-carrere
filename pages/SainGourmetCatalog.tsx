@@ -58,8 +58,8 @@ const SainGourmetCatalog: React.FC = () => {
                                 key={cat.key}
                                 onClick={() => setActiveCategory(cat.key as Category)}
                                 className={`text-sm uppercase tracking-[0.2em] font-semibold transition-all border-b-2 pb-1 ${activeCategory === cat.key
-                                        ? 'text-[#D4AF37] border-[#D4AF37]'
-                                        : 'text-gray-500 border-transparent hover:text-[#D4AF37] hover:border-[#D4AF37]/50'
+                                    ? 'text-[#D4AF37] border-[#D4AF37]'
+                                    : 'text-gray-500 border-transparent hover:text-[#D4AF37] hover:border-[#D4AF37]/50'
                                     }`}
                             >
                                 {cat.label}
@@ -72,24 +72,30 @@ const SainGourmetCatalog: React.FC = () => {
             {/* Product Grid - Luxury Gallery */}
             <section className="py-16">
                 <div className="max-w-6xl mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                         {filteredProducts.map((product) => (
                             <div
                                 key={product.id}
-                                className="bg-white/5 border border-[#D4AF37]/30 rounded-xl overflow-hidden hover:border-[#D4AF37] transition-all group"
+                                className="bg-white/5 border border-[#D4AF37]/30 rounded-2xl overflow-hidden hover:border-[#D4AF37] transition-all group"
                             >
-                                {/* Image - Larger, Dramatic */}
-                                <div className="aspect-[4/3] overflow-hidden">
+                                {/* Image */}
+                                <div className="h-52 overflow-hidden relative">
                                     <img
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
+                                    {/* Tag Badge */}
+                                    <span className="absolute top-3 left-3 bg-[#D4AF37] text-black text-xs font-bold px-3 py-1 rounded-full">
+                                        {product.category === 'chocolats' ? 'Chocolat' : product.category === 'boucherie' ? 'Festif' : 'Cadeau'}
+                                    </span>
                                 </div>
                                 {/* Content */}
-                                <div className="p-6">
-                                    <h3 className="font-serif text-xl text-[#D4AF37] mb-2">{product.name}</h3>
-                                    <p className="text-gray-400 text-sm">{product.desc}</p>
+                                <div className="p-5">
+                                    <h3 className="font-serif text-lg text-[#D4AF37] mb-2">{product.name}</h3>
+                                    <button className="w-full py-2 border-2 border-[#D4AF37] text-[#D4AF37] font-bold rounded-lg hover:bg-[#D4AF37] hover:text-black transition-colors">
+                                        {t('sg.catalog.viewbtn')}
+                                    </button>
                                 </div>
                             </div>
                         ))}
