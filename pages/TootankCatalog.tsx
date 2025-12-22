@@ -54,10 +54,10 @@ const TootankCatalog: React.FC = () => {
                     <Link to="/tootank" className="text-teal-800 hover:underline text-sm mb-4 inline-block">
                         ← {t('tt.catalog.back')}
                     </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold text-teal-900 mb-4 drop-shadow-sm">
+                    <h1 className="text-4xl md:text-5xl font-bold text-teal-900 mb-4" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.9), 0 0 15px rgba(255,255,255,0.7)' }}>
                         {t('tt.catalog.title')}
                     </h1>
-                    <p className="text-teal-800 text-lg max-w-2xl mx-auto drop-shadow-sm">
+                    <p className="text-teal-800 text-lg max-w-2xl mx-auto" style={{ textShadow: '0 1px 6px rgba(255,255,255,0.8)' }}>
                         {t('tt.catalog.desc')}
                     </p>
                 </div>

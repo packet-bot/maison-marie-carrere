@@ -86,10 +86,10 @@ const PleinePassionCatalog: React.FC = () => {
                     <Link to="/pleine-passion" className="text-blue-900 hover:underline text-sm mb-4 inline-block">
                         ← {t('pp.catalog.back')}
                     </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 drop-shadow-sm">
+                    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.9), 0 0 15px rgba(255,255,255,0.7)' }}>
                         {t('pp.catalog.title')}
                     </h1>
-                    <p className="text-blue-800 text-lg max-w-2xl mx-auto drop-shadow-sm">
+                    <p className="text-blue-800 text-lg max-w-2xl mx-auto" style={{ textShadow: '0 1px 6px rgba(255,255,255,0.8)' }}>
                         {t('pp.catalog.desc')}
                     </p>
                 </div>

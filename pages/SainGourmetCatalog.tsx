@@ -47,10 +47,10 @@ const SainGourmetCatalog: React.FC = () => {
                     <Link to="/sain-gourmet" className="text-[#D4AF37] hover:underline text-sm mb-6 inline-block">
                         ← {t('sg.catalog.back')}
                     </Link>
-                    <h1 className="text-4xl md:text-6xl font-serif text-[#D4AF37] mb-4">
+                    <h1 className="text-4xl md:text-6xl font-serif text-[#D4AF37] mb-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>
                         {t('sg.catalog.title')}
                     </h1>
-                    <p className="text-[#D4AF37]/80 text-lg max-w-2xl mx-auto">
+                    <p className="text-white/90 text-lg max-w-2xl mx-auto" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.7)' }}>
                         {t('sg.catalog.desc')}
                     </p>
                 </div>
