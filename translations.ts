@@ -507,16 +507,16 @@ export const translations = {
     "heritage.title": "Bakkan Kër Gi",
     "heritage.quote": "\"Baax gi baax lool su ñu ko séddoowul.\"",
     "heritage.matriarch.title": "Njàng bi ci Saint-Louis: Taariix bu Xol ak Neex",
-    "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère nekk woon. Plus qu'une grand-mère, elle était une institution, une philanthrope dans l'âme pour qui \u00ab bien manger \u00bb était avant tout un acte de soin et d'amour.",
-    "heritage.matriarch.desc2": "Ci kër Marie Carrère, taabalo bi daan jub togg, jumtukaay ngir jogal mook, mook, xarit. Ci biir solo bii gu yàgg la yokku doom jabaram, Seynabou Diop Diouf. Lu gaaw, maam bii 'fin gourmet' jàngal na Seynabou dëgg dëgg ci li ñu lekk, jàngal ko ne lekk bu wóor lay laaj gudd ak suuf si.",
-    "heritage.matriarch.desc3": "Mais cet héritage avait une seconde racine, ancrée dans la terre brute de Ndiawdoune. À quelques kilomètres de là, le père de Seynabou, éleveur passionné, régnait sur ses troupeaux. C'est lui, par son exigence absolue, qui lui a transmis la rigueur. Il lui a appris que la tendresse d'une viande ou la richesse d'un lait ne sont pas des hasards : ce sont des résultats qui se construisent au champ, avec patience et technique.",
-    "heritage.matriarch.desc4": "Si la vie a d'abord mené Seynabou vers la rigueur des chiffres et de la comptabilité, l'héritage de cette double culture a fini par la rattraper. Dès l'an 2000, une idée avait germé dans son esprit : créer une Maison qui rendrait justice à ce savoir-faire. Mais Seynabou, fidèle à l'enseignement paternel, savait qu'il ne suffisait pas d'être une passionnée pour exceller ; il fallait devenir une experte.",
-    "heritage.matriarch.desc5": "C'est pourquoi elle a choisi l'humilité de l'apprentissage. Mettant sa carrière entre parenthèses, elle est retournée sur les bancs de l'école pour se former rigoureusement en agroalimentaire. Elle a troqué ses bilans comptables contre la microbiologie et les processus de transformation, comprenant que pour sublimer la nature, il faut en maîtriser la science.",
-    "heritage.matriarch.desc6": "En 2006, portée par cette mémoire vivante et ce savoir acquis, Seynabou fonde Pleine Passion. Elle ne crée pas seulement une entreprise, elle recrée l'alchimie de son enfance : transformer les fruits du verger et le lait de la ferme en délices pour le corps et l'esprit.",
-    "heritage.matriarch.desc7": "Dans ses ateliers, elle ne laisse rien au hasard. Sa Recherche \u0026 Développement est poussée à l'extrême. Ses yaourts, par exemple, sont élaborés à partir de souches de ferments spécifiques, travaillées et sélectionnées au fil des années. C'est cette science invisible qui donne cette signature gustative inimitable.",
-    "heritage.matriarch.desc8": "Parce que Marie Carrère veillait sur les siens avec une tendresse infinie, Toot'ank est né naturellement pour protéger les plus petits, appliquant cette même rigueur scientifique à la nutrition infantile.",
-    "heritage.matriarch.desc9": "L'histoire se répète quelques années plus tard. Alors que l'entreprise prospère, Seynabou perçoit dès 2012 le besoin d'aller plus loin : créer un écrin pour le très haut de gamme. Mais fidèle à sa méthode, elle refuse la précipitation. Elle prend le temps de développer et parfaire ses recettes. Ce n'est qu'en 2023, une fois la formule parfaite atteinte, que l'exigence de la grand-mère trouve son ultime expression avec la naissance de Sain Gourmet.",
-    "heritage.matriarch.desc10": "Aujourd'hui, Maison Marie Carrère est le prolongement de cette table saint-louisienne. Une maison bâtie sur la conviction profonde que \u00ab le bon est encore meilleur quand il est partagé \u00bb, alliant la chaleur d'un souvenir d'enfance à la précision scientifique de l'industrie moderne.",
+    "heritage.matriarch.desc1": "Lépp tambali na ci Saint-Louis (Ndar), ci tangaay kër benn bu bunt bi néewul tëj. Fii la Marie Carrère doon sàmm. Du woon rekk benn maam, mooy woon benn institution, benn philanthrope bu am xol bu bëgg nit ñi, bu gis ne 'lekk bu baax' mooy njëkk acte bu soxla ak mbëggeel.",
+    "heritage.matriarch.desc2": "Ci kër Marie Carrère, taabalo bi daan jub togg, jumtukaay ngir jogal mook, mook, xarit. Ci biir solo bii gu yàgg la yokku doom jabaram, Seynabou Diop Diouf. Lu gaaw, maam bii 'fin gourmet' jàngal na Seynabou dëgg dëgg ci li ñu lekk, jàngal ko ne lekk bu wóor lay laaj respect bu mat ci li suuf si di nu jox.",
+    "heritage.matriarch.desc3": "Waaye njàng bii amoon na beneen reeti, bu nekk ci suuf bu ëpp bu Ndiawdoune. Ci ay kilomètres rekk, baay Seynabou, éleveur bu am bëgg-bëgg, daan sàmm ay nag. Mooy ko, ak exigence bu nekk, jébbéloon rigueur. Mu jàngal ko ne neex yàpp walla bari meew duñu hasard: mooy résultats yu ñu tabax ci tol bi, ak muñ ak technique.",
+    "heritage.matriarch.desc4": "Bu dund bi njëkkoon yóbbu Seynabou ci rigueur chiffres ak comptabilité, njàng double culture bii fii nako jot. Ci l'an 2000, benn xalaat daan a am ci xelam: sos benn Kër bu mën wane xam-xam bii. Waaye Seynabou, bu toppee jàng baay, xam na ne amul solo ngir bëgg rekk ngir xcel; dafa war nekk benn experte.",
+    "heritage.matriarch.desc5": "Mooy tax tànnoon humilité jàng bi. Danko tëdd carrière bi, dellu ci lekkool ngir jàng bu baax ci agroalimentaire. Mu soppi bilans comptables yi ci microbiologie ak processus transformation, dégge ne ngir yékiti mburu mi, war nañu maîtriser science bi.",
+    "heritage.matriarch.desc6": "Ci 2006, yor ci mémoire bu dund bii ak xam-xam bu mu jot, Seynabou sos na Pleine Passion. Du woon rekk créer benn entreprise, mu sos wu alchimie bu enfance bi: soppi fruits verger bi ak meew tol bi ci neex ngir yaram ak xel.",
+    "heritage.matriarch.desc7": "Ci ateliers yi, deful dara ci hasard. Recherche ak Développement bi ñu ko yóbbu ci kaw lool. Yaourts yi, par exemple, ñu leen def ak souches ferments yu ñu tànn, yu ñu liggéey te tànn ci at yi. Mooy science bu ñu gënu gis bi di jox signature gustative bi ñu mënul niroo.",
+    "heritage.matriarch.desc8": "Ndax Marie Carrère daan seet ci ñoom ak tendresse bu nekk limite, Toot'ank juddu na naturellement ngir aar xale yu ndaw yi, topp ci même rigueur scientifique ci nutrition infantile.",
+    "heritage.matriarch.desc9": "Taariix bi di dellu ci ay at. Bi entreprise bi di prospérer, Seynabou gis na ci 2012 soxla dem ci kanam: sos benn écrin ngir très haut de gamme. Waaye toppee méthode bi, bañ na gaaw. Mu jël yoon ngir développe ak perfectionner recettes yi. Mooy ci 2023, bi formule parfaite bi am, exigence maam bi gis na expression bi mu gëna mag ak juddu Sain Gourmet.",
+    "heritage.matriarch.desc10": "Tey, Kër Marie Carrère mooy prolongement taabalo Saint-Louis bii. Benn kër bu ñu tabax ci conviction bu am solo ne 'baax gi gëna baax su ñu ko séddoo', bokkal tangaay souvenir enfance ak précision scientifique industrie moderne.",
     "heritage.stat.owned": "Senegaalnaako moom",
     "heritage.stat.generations": "Xeetu Ndamam",
 
@@ -551,7 +551,7 @@ export const translations = {
     // Boucherie
     "sg.boucherie.sub": "La Haute Boucherie",
     "sg.boucherie.title": "Taabalo bu Rafet",
-    "sg.boucherie.desc": "Seetlu neex fête bi. Ci Chapon farci ba Foie Gras, yàpp yi ñu magi Ndiawdoune ak muñ ak respect. Chaque pièce raconte une histoire d'héritage et d'excellence.",
+    "sg.boucherie.desc": "Seetlu neex fête bi. Ci Chapon farci ba Foie Gras, yàpp yi ñu magi Ndiawdoune ak muñ ak respect. Pièce bu nekk di wax benn taariix njàng ak ndamam.",
     "sg.boucherie.btn": "Télécharger Menu Festif",
     // Corporate
     "sg.corporate.sub": "Cadeaux Entreprise",
@@ -574,7 +574,7 @@ export const translations = {
 
     // Tootank
     "tt.hero.title": "Toot'ank",
-    "tt.hero.desc": "Mag ak doole, naturellement. Des repas nutritifs pour les futurs leaders du Sénégal, faits à partir des meilleures récoltes locales.",
+    "tt.hero.desc": "Mag ak doole, naturellement. Lekk yu am nutriments ngir futurs leaders Senegaal, yu ñu def ak récoltes locales yi gëna baax.",
     "tt.hero.btn": "Seet Produits yi",
     "tt.sticker": "100% Naturel",
     "tt.hero.tagline": "Mag Bu Wer, Mag Ci Suuf.",
@@ -586,7 +586,7 @@ export const translations = {
     // Lifestyle Section
     "tt.lifestyle.sub": "La Garde-Robe",
     "tt.lifestyle.title": "Noppal ngir Yaram yu Rafet",
-    "tt.lifestyle.desc": "Yère ak essentiels yi ñu def ak leru yi gëna noppal. Doux pour bébé, doux pour la planète.",
+    "tt.lifestyle.desc": "Yère ak essentiels yi ñu def ak leru yi gëna noppal. Noppal ngir bébé, noppal ngir planète.",
     "tt.lifestyle.btn": "Xool Collection",
     // Community Section
     "tt.community.sub": "Coaching & Ateliers",
