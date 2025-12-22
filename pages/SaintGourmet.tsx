@@ -56,7 +56,8 @@ const SaintGourmet: React.FC = () => {
           <img
             src="/images/logos/Logo Sain Gourmet.png"
             alt="Sain Gourmet"
-            className="h-48 md:h-72 mx-auto drop-shadow-2xl"
+            className="h-48 md:h-72 mx-auto"
+            style={{ filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.8)) drop-shadow(0 2px 8px rgba(0,0,0,0.6))' }}
           />
         </div>
 
