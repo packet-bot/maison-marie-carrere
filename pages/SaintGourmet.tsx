@@ -48,7 +48,7 @@ const SaintGourmet: React.FC = () => {
           style={{ opacity: scrollOpacity }}
         ></div>
 
-        {/* Centered Logo & Subtitle - Fades on Scroll */}
+        {/* Centered Logo - Fades on Scroll */}
         <div
           className="relative z-10 text-center px-6 transition-opacity duration-100"
           style={{ opacity: scrollOpacity }}
@@ -56,11 +56,8 @@ const SaintGourmet: React.FC = () => {
           <img
             src="/images/logos/Logo Sain Gourmet.png"
             alt="Sain Gourmet"
-            className="h-48 md:h-72 mx-auto mb-6 drop-shadow-2xl"
+            className="h-48 md:h-72 mx-auto drop-shadow-2xl"
           />
-          <p className="text-[#D4AF37] tracking-[0.3em] uppercase text-sm md:text-base font-semibold drop-shadow-lg">
-            {t('sg.hero.sub')}
-          </p>
         </div>
 
         {/* Au Lait Frais Badge - Stays Visible */}
