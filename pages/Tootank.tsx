@@ -46,8 +46,8 @@ const Tootank: React.FC = () => {
             {/* Left: Image */}
             <div className="relative">
               <img
-                src="/images/tootank/tootank-nutrition-jars.jpeg"
-                alt="Baby Food Jars"
+                src="/images/tootank/tootank-nutrition-jar.jpeg"
+                alt="Baby Food Jar"
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
               {/* Decorative Circle */}
