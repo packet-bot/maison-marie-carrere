@@ -92,6 +92,24 @@ export const translations = {
     "tt.hero.desc": "Growing strong, naturally. Nutritious meals for Senegal's future leaders, made from the finest local harvest.",
     "tt.hero.btn": "Explore Products",
     "tt.sticker": "100% Natural",
+    "tt.hero.tagline": "Growing Healthy, Growing Local.",
+    // Nutrition Section
+    "tt.nutrition.sub": "Les Petits Pots",
+    "tt.nutrition.title": "Nature's First Spoonful",
+    "tt.nutrition.desc": "We transform the best local fruits (Bouye, Papaya, Solom) into nutrient-rich purees. No added sugar, just the taste of Senegal for your little one.",
+    "tt.nutrition.btn": "Explore Nutrition",
+    // Lifestyle Section
+    "tt.lifestyle.sub": "La Garde-Robe",
+    "tt.lifestyle.title": "Softness for Sensitive Skin",
+    "tt.lifestyle.desc": "Handcrafted clothing and nursery essentials made from the softest cottons. Gentle on baby, gentle on the planet.",
+    "tt.lifestyle.btn": "Shop Collection",
+    // Community Section
+    "tt.community.sub": "Coaching & Ateliers",
+    "tt.community.title": "Join Our Parenting Workshops",
+    "tt.community.desc": "Expert advice on nutrition, sleep, and early childhood care. Connect with other parents in our supportive community.",
+    "tt.community.btn": "See Events",
+    // Favorites
+    "tt.fav.sub": "Handpicked for your little one",
     "tt.feat1.title": "Sanitary Excellence",
     "tt.feat1.desc": "Produced in a clinical environment meeting international safety standards.",
     "tt.feat2.title": "Nutrient Rich",
@@ -275,6 +293,24 @@ export const translations = {
     "tt.hero.desc": "Grandir fort, naturellement. Des repas nutritifs pour les futurs leaders du Sénégal, faits à partir des meilleures récoltes locales.",
     "tt.hero.btn": "Explorer les Produits",
     "tt.sticker": "100% Naturel",
+    "tt.hero.tagline": "Grandir Sainement, Grandir Localement.",
+    // Nutrition Section
+    "tt.nutrition.sub": "Les Petits Pots",
+    "tt.nutrition.title": "La Première Cuillerée de la Nature",
+    "tt.nutrition.desc": "Nous transformons les meilleurs fruits locaux (Bouye, Papaye, Solom) en purées riches en nutriments. Sans sucre ajouté, juste le goût du Sénégal pour votre petit.",
+    "tt.nutrition.btn": "Explorer la Nutrition",
+    // Lifestyle Section
+    "tt.lifestyle.sub": "La Garde-Robe",
+    "tt.lifestyle.title": "De la Douceur pour les Peaux Sensibles",
+    "tt.lifestyle.desc": "Vêtements et essentiels de puériculture artisanaux fabriqués à partir des cotons les plus doux. Doux pour bébé, doux pour la planète.",
+    "tt.lifestyle.btn": "Voir la Collection",
+    // Community Section
+    "tt.community.sub": "Coaching & Ateliers",
+    "tt.community.title": "Rejoignez Nos Ateliers Parentaux",
+    "tt.community.desc": "Conseils d'experts sur la nutrition, le sommeil et les soins de la petite enfance. Connectez-vous avec d'autres parents.",
+    "tt.community.btn": "Voir les Événements",
+    // Favorites
+    "tt.fav.sub": "Sélectionnés pour votre petit",
     "tt.feat1.title": "Excellence Sanitaire",
     "tt.feat1.desc": "Produit dans un environnement clinique répondant aux normes de sécurité internationales.",
     "tt.feat2.title": "Riche en Nutriments",
@@ -458,6 +494,24 @@ export const translations = {
     "tt.hero.desc": "Mag ak doole, naturellement. Lekk gu baax ngir chefs yi ci kanam ci Senegaal, ñu def ak récoltes locale yi gëna baax.",
     "tt.hero.btn": "Seet Produits yi",
     "tt.sticker": "100% Naturel",
+    "tt.hero.tagline": "Mag Bu Wer, Mag Ci Suuf.",
+    // Nutrition Section
+    "tt.nutrition.sub": "Les Petits Pots",
+    "tt.nutrition.title": "Njukki Bu Jafe",
+    "tt.nutrition.desc": "Nu di suqali mburu yi gëna baax (Bouye, Papaay, Solom) ci purées yu am nutriments. Amul sucre, neex Senegaal rekk ngir sa doom.",
+    "tt.nutrition.btn": "Xool Nutrition",
+    // Lifestyle Section
+    "tt.lifestyle.sub": "La Garde-Robe",
+    "tt.lifestyle.title": "Noppal ngir Yaram yu Rafet",
+    "tt.lifestyle.desc": "Yère ak essentiels yi ñu def ak leru yi gëna noppal. Noppal ngir doom, noppal ngir suuf.",
+    "tt.lifestyle.btn": "Xool Collection",
+    // Community Section
+    "tt.community.sub": "Coaching & Ateliers",
+    "tt.community.title": "Boole ak Sunu Ateliers",
+    "tt.community.desc": "Conseils experts ci nutrition, nelaw ak suxali doom. Jokkoo ak yaay ak baay yu bees.",
+    "tt.community.btn": "Xool Événements",
+    // Favorites
+    "tt.fav.sub": "Tann ngir sa doom",
     "tt.feat1.title": "Ndamam Sanitaire",
     "tt.feat1.desc": "Ñu fa def ci environnement clinique bu topp normes sécurité internationales.",
     "tt.feat2.title": "Bari ci Nutriments",
