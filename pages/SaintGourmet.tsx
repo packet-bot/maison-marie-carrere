@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const SaintGourmet: React.FC = () => {
   const { t } = useLanguage();
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+
+  // Scroll-linked fade effect for hero logo
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = 300;
+      const opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+      setScrollOpacity(opacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Chocolate collection flavors
   const chocolateFlavors = [
@@ -16,16 +31,39 @@ const SaintGourmet: React.FC = () => {
   return (
     <div className="bg-[#051F1A] text-gray-300 w-full">
       {/* ==================== SECTION 1: HERO ==================== */}
-      <section className="relative h-screen w-full">
-        {/* Background Image with Heavy Overlay */}
+      <section className="relative h-screen w-full flex items-center justify-center">
+        {/* Background Image */}
         <img
           src="/images/sain-gourmet/sain-gourmet-hero.jpeg"
           alt="Sain Gourmet Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* Au Lait Frais Badge - Bottom Right Corner Only */}
+        {/* Base Overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
+
+        {/* Gradient Scrim for Logo Readability - behind logo, on top of image */}
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent"
+          style={{ opacity: scrollOpacity }}
+        ></div>
+
+        {/* Centered Logo & Subtitle - Fades on Scroll */}
+        <div
+          className="relative z-10 text-center px-6 transition-opacity duration-100"
+          style={{ opacity: scrollOpacity }}
+        >
+          <img
+            src="/images/logos/Logo Sain Gourmet.png"
+            alt="Sain Gourmet"
+            className="h-48 md:h-72 mx-auto mb-6 drop-shadow-2xl"
+          />
+          <p className="text-[#D4AF37] tracking-[0.3em] uppercase text-sm md:text-base font-semibold drop-shadow-lg">
+            {t('sg.hero.sub')}
+          </p>
+        </div>
+
+        {/* Au Lait Frais Badge - Stays Visible */}
         <div className="absolute bottom-8 right-8 z-10">
           <div className="border border-[#D4AF37] rounded-full px-4 py-2 text-[#D4AF37] text-xs tracking-widest uppercase backdrop-blur-sm bg-black/30">
             Au Lait Frais
