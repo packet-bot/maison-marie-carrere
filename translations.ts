@@ -66,15 +66,26 @@ export const translations = {
     "process.step3.desc": "From our facility to your table, the cold chain is never broken. We deliver freshness that honors the raw ingredients and respects the consumer.",
 
     // Saint Gourmet
-    "sg.hero.sub": "PREMIUM COLLECTION",
-    "sg.hero.title": "L'Art de la Pâtisserie",
+    "sg.hero.sub": "L'ÉLÉGANCE DU TERROIR",
     "sg.intro": "Elevating local ingredients to the height of sophistication. Sain Gourmet is the jewel in our crown, offering pastries and delicacies that rival the finest Parisian salons, yet rooted in the soul of Senegal.",
-    "sg.prod1.title": "The Gold Standard Eclair",
-    "sg.prod1.desc": "Crafted with locally sourced, ultra-fresh dairy from our Pleine Passion farms, enriched with imported vanilla pods and finished with 24k gold leaf. A symphony of textures.",
-    "sg.prod.btn": "View Catalog",
-    "sg.prod2.title": "Signature Macarons",
-    "sg.prod2.desc": "Inspired by the colors of Gorée. Flavors include Bissap & White Chocolate, Baobab & Lime, and Salted Caramel using salt from the Pink Lake.",
-    "sg.quote": "\"Luxury is not about price. It is about the purity of the source and the passion of the craft.\"",
+    // Collection
+    "sg.collection.title": "La Collection Le Carré",
+    "sg.collection.desc": "Our signature chocolate squares, crafted with locally sourced ingredients and artisan techniques.",
+    "sg.collection.praline": "Praliné Cajou",
+    "sg.collection.moringa": "Moringa",
+    "sg.collection.bissap": "Bissap",
+    "sg.collection.cafe": "Café Touba",
+    "sg.collection.blanc": "Blanc",
+    // Boucherie
+    "sg.boucherie.sub": "La Haute Boucherie",
+    "sg.boucherie.title": "Une Table d'Exception",
+    "sg.boucherie.desc": "Rediscover the taste of celebration. From Stuffed Capon to Foie Gras, our meats are raised in Ndiawdoune with patience and respect. Every cut tells a story of heritage and excellence.",
+    "sg.boucherie.btn": "Download Festive Menu",
+    // Corporate
+    "sg.corporate.sub": "Corporate Gifting",
+    "sg.corporate.title": "Prestige & Partnership",
+    "sg.corporate.desc": "Offer the best of Senegal to your partners. Custom gift boxes, branded packaging, and exclusive collections for your most valued relationships.",
+    "sg.corporate.btn": "Contact Corporate Sales",
 
     // Tootank
     "tt.hero.title": "Toot'ank",
@@ -224,15 +235,27 @@ export const translations = {
     "process.step3.desc": "De notre installation à votre table, la chaîne du froid n'est jamais rompue. Nous livrons une fraîcheur qui honore les ingrédients bruts et respecte le consommateur.",
 
     // Saint Gourmet
-    "sg.hero.sub": "COLLECTION PREMIUM",
-    "sg.hero.title": "L'Art de la Pâtisserie",
-    "sg.intro": "Élever les ingrédients locaux au sommet du raffinement. Sain Gourmet est le joyau de notre couronne, offrant des pâtisseries et des délices qui rivalisent avec les plus grands salons parisiens, tout en étant enracinés dans l'âme du Sénégal.",
-    "sg.prod1.title": "L'Éclair Gold Standard",
-    "sg.prod1.desc": "Confectionné avec des produits laitiers ultra-frais de nos fermes Pleine Passion, enrichi de gousses de vanille importées et fini à la feuille d'or 24 carats. Une symphonie de textures.",
-    "sg.prod.btn": "Voir le Catalogue",
-    "sg.prod2.title": "Macarons Signature",
-    "sg.prod2.desc": "Inspirés par les couleurs de Gorée. Saveurs incluant Bissap & Chocolat Blanc, Baobab & Citron Vert, et Caramel au Beurre Salé utilisant le sel du Lac Rose.",
-    "sg.quote": "\"Le luxe n'est pas une question de prix. C'est la pureté de la source et la passion de l'artisanat.\"",
+    "sg.hero.sub": "L'ÉLÉGANCE DU TERROIR",
+    "sg.intro": "Élever les ingrédients locaux au sommet du raffinement. Sain Gourmet est le joyau de notre couronne, offrant des pâtisseries et des délices qui rivalisent avec les plus grands salons parisiens.",
+    // Collection
+    "sg.collection.title": "La Collection Le Carré",
+    "sg.collection.desc": "Nos carrés de chocolat signature, confectionnés avec des ingrédients locaux et des techniques artisanales.",
+    "sg.collection.praline": "Praliné Cajou",
+    "sg.collection.moringa": "Moringa",
+    "sg.collection.bissap": "Bissap",
+    "sg.collection.cafe": "Café Touba",
+    "sg.collection.blanc": "Blanc",
+    // Boucherie
+    "sg.boucherie.sub": "La Haute Boucherie",
+    "sg.boucherie.title": "Une Table d'Exception",
+    "sg.boucherie.desc": "Redécouvrez le goût de la fête. Du Chapon farci au Foie Gras, nos viandes sont élevées à Ndiawdoune avec patience et respect. Chaque pièce raconte une histoire d'héritage et d'excellence.",
+    "sg.boucherie.btn": "Télécharger le Menu Festif",
+    // Corporate
+    "sg.corporate.sub": "Cadeaux d'Entreprise",
+    "sg.corporate.title": "Prestige & Partenariat",
+    "sg.corporate.desc": "Offrez le meilleur du Sénégal à vos partenaires. Coffrets cadeaux personnalisés, emballages marqués et collections exclusives pour vos relations les plus précieuses.",
+    "sg.corporate.btn": "Contacter le Service Entreprises",
+
 
     // Tootank
     "tt.hero.title": "Toot'ank",
@@ -382,15 +405,27 @@ export const translations = {
     "process.step3.desc": "Ci usine bi ba ci taabalo sa, chaîne du froid néewul fas. Ñu di yóbbu fraîcheur bu joxe sañ-sañ ci mburu mi te respect konsommateer bi.",
 
     // Saint Gourmet
-    "sg.hero.sub": "MBOOLEM PREMIUM",
-    "sg.hero.title": "Art bu Pâtisserie",
-    "sg.intro": "Yékiti mburu mi ci kaw rafet. Sain Gourmet mooy joyau couronne bi, di jox pâtisseries ak neex yi mën woon caq ak salons parisiens yi gëna rafet, waaye reeti ci xol Senegaal.",
-    "sg.prod1.title": "Éclair Gold Standard",
-    "sg.prod1.desc": "Ñu def ak produits laitiers yu fresh ci ferme Pleine Passion, enrichi ak gousses vanille yi ñu yóbbu, te fini ak feuille d'or 24 carats. Symphonie textures.",
-    "sg.prod.btn": "Xool Catalogue bi",
-    "sg.prod2.title": "Macarons Signature",
-    "sg.prod2.desc": "Inspirés par couleurs Gorée. Goût yi am Bissap & Chocolat Blanc, Bouye & Citron Vert, ak Caramel au Beurre Salé bu jëfandikoo siiw Lac Rose.",
-    "sg.quote": "\"Luxe du prix. Mooy pureté jëmmi ak bëgg-bëgg métier bi.\"",
+    "sg.hero.sub": "RAFET CI SUUF",
+    "sg.intro": "Yékiti mburu mi ci kaw rafet. Sain Gourmet mooy joyau couronne bi, di jox pâtisseries ak neex yi mën woon caq ak salons parisiens yi gëna rafet.",
+    // Collection
+    "sg.collection.title": "La Collection Le Carré",
+    "sg.collection.desc": "Carrés chocolat signature, ñu def ak ingrédients locaux ak techniques artisanales.",
+    "sg.collection.praline": "Praliné Cajou",
+    "sg.collection.moringa": "Moringa",
+    "sg.collection.bissap": "Bissap",
+    "sg.collection.cafe": "Café Touba",
+    "sg.collection.blanc": "Blanc",
+    // Boucherie
+    "sg.boucherie.sub": "La Haute Boucherie",
+    "sg.boucherie.title": "Taabalo bu Rafet",
+    "sg.boucherie.desc": "Seetlu neex fête bi. Ci Chapon farci ba Foie Gras, yàpp yi ñu magi Ndiawdoune ak muñ ak respect. Lu nekk di wax aada ak rafet.",
+    "sg.boucherie.btn": "Télécharger Menu Festif",
+    // Corporate
+    "sg.corporate.sub": "Cadeaux Entreprise",
+    "sg.corporate.title": "Prestige & Partenariat",
+    "sg.corporate.desc": "Jox yi gëna baax Senegaal ci partenaires yi. Coffrets cadeaux customisés, emballages marqués ak collections exclusives.",
+    "sg.corporate.btn": "Contacter Service Entreprises",
+
 
     // Tootank
     "tt.hero.title": "Toot'ank",
