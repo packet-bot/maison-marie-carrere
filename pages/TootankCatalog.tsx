@@ -47,6 +47,13 @@ const TootankCatalog: React.FC = () => {
                     <Link to="/tootank" className="text-tootank-green hover:underline text-sm mb-4 inline-block">
                         ← {t('tt.catalog.back')}
                     </Link>
+                    {/* Toot'ank Logo v2 - Teal #2dd4bf like hero */}
+                    <img
+                        src="/images/logos/Tootank logo v2.png"
+                        alt="Toot'ank"
+                        className="h-auto max-w-md w-full object-contain mb-4 drop-shadow-sm"
+                        style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(52%) saturate(456%) hue-rotate(118deg) brightness(95%) contrast(91%)' }}
+                    />
                     <h1 className="text-4xl md:text-5xl font-bold text-stone-800 mb-4">
                         {t('tt.catalog.title')}
                     </h1>

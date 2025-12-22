@@ -74,16 +74,18 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              {/* Content Block - White Background */}
-              <div className="bg-white p-6 text-center flex-grow">
-                <span className="text-[#D4AF37] text-[10px] uppercase tracking-[0.3em] mb-2 block font-serif">{t('home.brand.sg.sub')}</span>
+              {/* Content Block */}
+              <div className="flex flex-col flex-grow p-6 text-center">
+                <span className="text-[#D4AF37] text-[10px] uppercase tracking-[0.3em] mb-1 block font-serif">{t('home.brand.sg.sub')}</span>
                 <h3 className="text-2xl font-serif uppercase tracking-wider text-[#D4AF37] mb-3">Sain Gourmet</h3>
-                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
+                <p className="text-stone-600 text-sm leading-relaxed mb-4">
                   {t('home.brand.sg.desc')}
                 </p>
-                <Link to="/sain-gourmet" className="inline-flex items-center gap-2 text-[#D4AF37] uppercase text-xs tracking-widest font-serif border-b border-[#D4AF37] pb-1 hover:text-[#b8993a] hover:border-[#b8993a] transition-colors">
-                  {t('home.brand.sg.btn')} <ArrowRight size={12} />
-                </Link>
+                <div className="mt-auto">
+                  <Link to="/sain-gourmet" className="inline-flex items-center gap-2 text-[#D4AF37] uppercase text-xs tracking-widest font-serif border-b border-[#D4AF37] pb-1 hover:text-[#b8993a] hover:border-[#b8993a] transition-colors">
+                    {t('home.brand.sg.btn')} <ArrowRight size={12} />
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -97,15 +99,17 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              {/* Content Block - White Background */}
-              <div className="bg-white p-6 text-center flex-grow">
+              {/* Content Block */}
+              <div className="flex flex-col flex-grow p-6 text-center">
                 <h3 className="text-2xl font-sans font-bold text-[#1e3a5f] mb-3">Pleine Passion</h3>
-                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
+                <p className="text-stone-600 text-sm leading-relaxed mb-4">
                   {t('home.brand.pp.desc')}
                 </p>
-                <Link to="/pleine-passion" className="inline-flex items-center gap-2 text-[#1e3a5f] uppercase text-xs tracking-widest font-sans font-medium border-b border-[#1e3a5f] pb-1 hover:text-[#2d4a6f] hover:border-[#2d4a6f] transition-colors">
-                  {t('home.brand.pp.btn')} <ArrowRight size={12} />
-                </Link>
+                <div className="mt-auto">
+                  <Link to="/pleine-passion" className="inline-flex items-center gap-2 text-[#1e3a5f] uppercase text-xs tracking-widest font-sans font-medium border-b border-[#1e3a5f] pb-1 hover:text-[#2d4a6f] hover:border-[#2d4a6f] transition-colors">
+                    {t('home.brand.pp.btn')} <ArrowRight size={12} />
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -119,15 +123,17 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              {/* Content Block - White Background */}
-              <div className="bg-white p-6 text-center flex-grow">
+              {/* Content Block */}
+              <div className="flex flex-col flex-grow p-6 text-center">
                 <h3 className="text-2xl font-bold text-[#2dd4bf] mb-3" style={{ fontFamily: "'Quicksand', 'Nunito', sans-serif" }}>toot'ank</h3>
-                <p className="text-stone-600 text-sm mb-6 leading-relaxed">
+                <p className="text-stone-600 text-sm leading-relaxed mb-4">
                   {t('home.brand.tt.desc')}
                 </p>
-                <Link to="/tootank" className="inline-flex items-center gap-2 bg-[#2dd4bf] text-white px-5 py-2 rounded-full text-xs tracking-widest font-bold hover:bg-[#14b8a6] transition-colors">
-                  {t('home.brand.tt.btn')}
-                </Link>
+                <div className="mt-auto">
+                  <Link to="/tootank" className="inline-flex items-center gap-2 bg-[#2dd4bf] text-white px-5 py-2 rounded-full text-xs tracking-widest font-bold hover:bg-[#14b8a6] transition-colors">
+                    {t('home.brand.tt.btn')}
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

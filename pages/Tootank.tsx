@@ -8,33 +8,36 @@ const Tootank: React.FC = () => {
   return (
     <div className="bg-yellow-50 w-full" style={{ fontFamily: "'Nunito', 'Quicksand', sans-serif" }}>
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <img
-          src="/images/tootank/tootank-hero-joy.jpeg"
-          alt="Happy Baby"
-          className="absolute inset-0 w-full h-full object-cover"
+      <section className="relative min-h-screen w-full flex items-center overflow-hidden">
+        {/* Background Image - with negative space */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/tootank/tootank-hero-negative-space.jpeg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 to-white/60"></div>
+        {/* Subtle overlay for text readability */}
+        <div className="absolute inset-0 bg-white/20" />
 
-        {/* Glassmorphism Logo Card */}
-        <div className="relative z-10 text-center px-6">
-          <div className="bg-white/40 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-xl border border-white/50 max-w-lg mx-auto">
+        {/* Content - Left aligned on the negative space */}
+        <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 w-full">
+          <div className="max-w-xl">
+            {/* Toot'ank Logo v2 - Teal #2dd4bf */}
             <img
-              src="/images/logos/logo tootank.png"
+              src="/images/logos/Tootank logo v2.png"
               alt="Toot'ank"
-              className="h-32 md:h-48 mx-auto mb-6"
+              className="h-auto max-w-md w-full object-contain mb-6 drop-shadow-sm"
+              style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(52%) saturate(456%) hue-rotate(118deg) brightness(95%) contrast(91%)' }}
             />
-            <p className="text-tootank-green text-xl md:text-2xl font-bold tracking-wide">
+            {/* Tagline - Deep teal for readability on light bg */}
+            <p className="text-teal-800 text-xl md:text-2xl font-bold tracking-wide mb-8">
               {t('tt.hero.tagline')}
             </p>
-          </div>
-        </div>
-
-        {/* Bouncing Sticker */}
-        <div className="absolute bottom-12 right-12 z-10">
-          <div className="bg-tootank-yellow text-stone-900 px-6 py-3 rounded-full font-bold shadow-lg animate-bounce">
-            {t('tt.sticker')}
+            {/* CTA Button - Pastel Yellow */}
+            <Link
+              to="/tootank/catalog"
+              className="inline-block bg-yellow-400 text-yellow-900 px-8 py-4 rounded-full font-bold shadow-lg hover:bg-yellow-300 hover:shadow-xl transition-all"
+            >
+              {t('tt.hero.btn')}
+            </Link>
           </div>
         </div>
       </section>
