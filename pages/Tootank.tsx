@@ -13,7 +13,7 @@ const Tootank: React.FC = () => {
         {/* Mobile: position right to show the subject (mother & baby on the right side of the image) */}
         {/* Desktop: center the image for the full composition */}
         <div
-          className="absolute inset-0 bg-cover bg-[center_right_-122px] sm:bg-[center_right_-2rem] md:bg-center"
+          className="absolute inset-0 bg-cover bg-[center_right_-132px] sm:bg-[center_right_-2rem] md:bg-center"
           style={{ backgroundImage: "url('/images/tootank/tootank-hero-negative-space.jpeg')" }}
         />
         {/* Subtle overlay for text readability - slightly stronger on mobile */}
