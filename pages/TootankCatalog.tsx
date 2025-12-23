@@ -50,7 +50,7 @@ const TootankCatalog: React.FC = () => {
                 <div className="absolute inset-0 bg-white/50"></div>
 
                 {/* Content */}
-                <div className="relative z-10 container mx-auto px-6 text-center">
+                <div className="relative z-10 container mx-auto px-6 text-center pt-20 md:pt-24">
                     <Link to="/tootank" className="text-teal-800 hover:underline text-sm mb-4 inline-block">
                         ← {t('tt.catalog.back')}
                     </Link>
@@ -63,20 +63,21 @@ const TootankCatalog: React.FC = () => {
                 </div>
             </section>
 
-            {/* Category Navigation */}
-            <section className="py-8 bg-white border-b border-stone-100 sticky top-0 z-30">
-                <div className="container mx-auto px-6">
-                    <div className="flex flex-wrap gap-4 justify-center">
+            {/* Category Navigation - Compact on mobile, horizontal scroll */}
+            <section className="py-3 md:py-6 bg-white border-b border-stone-100 sticky top-0 z-30 shadow-sm">
+                <div className="container mx-auto px-3 md:px-6">
+                    {/* Horizontal scroll on mobile, centered wrap on desktop */}
+                    <div className="flex gap-2 md:gap-4 md:justify-center overflow-x-auto pb-1 md:pb-0 scrollbar-hide md:flex-wrap">
                         {categories.map((cat) => (
                             <button
                                 key={cat.key}
                                 onClick={() => setActiveCategory(cat.key as Category)}
-                                className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${activeCategory === cat.key
+                                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-6 py-2 md:py-3 rounded-full font-semibold transition-all whitespace-nowrap text-sm md:text-base flex-shrink-0 ${activeCategory === cat.key
                                     ? 'bg-tootank-green text-white shadow-lg'
                                     : 'bg-stone-100 text-stone-600 hover:bg-tootank-soft'
                                     }`}
                             >
-                                <span className="text-xl">{cat.icon}</span>
+                                <span className="text-base md:text-xl">{cat.icon}</span>
                                 <span>{cat.label}</span>
                             </button>
                         ))}

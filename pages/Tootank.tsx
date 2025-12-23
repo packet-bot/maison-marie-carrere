@@ -8,18 +8,20 @@ const Tootank: React.FC = () => {
   return (
     <div className="bg-yellow-50 w-full" style={{ fontFamily: "'Nunito', 'Quicksand', sans-serif" }}>
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative min-h-screen w-full flex items-center overflow-hidden">
+      <section className="relative min-h-[85vh] md:min-h-screen w-full flex items-center overflow-hidden">
         {/* Background Image - with negative space */}
+        {/* Mobile: position right to show the subject (mother & baby on the right side of the image) */}
+        {/* Desktop: center the image for the full composition */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-[center_right_-5rem] sm:bg-[center_right_-2rem] md:bg-center"
           style={{ backgroundImage: "url('/images/tootank/tootank-hero-negative-space.jpeg')" }}
         />
-        {/* Subtle overlay for text readability */}
-        <div className="absolute inset-0 bg-white/20" />
+        {/* Subtle overlay for text readability - slightly stronger on mobile */}
+        <div className="absolute inset-0 bg-white/30 md:bg-white/20" />
 
         {/* Content - Left aligned on the negative space */}
-        <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 w-full">
-          <div className="max-w-xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 md:px-16 w-full pt-20 md:pt-0">
+          <div className="max-w-xs sm:max-w-sm md:max-w-xl">
             {/* Toot'ank Logo v2 - Teal #2dd4bf */}
             <img
               src="/images/logos/Tootank logo v2.png"

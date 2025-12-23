@@ -200,6 +200,19 @@
       background: #555;
     }
 
+    /* Hide scrollbar for horizontal scroll containers */
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Opera */
+    }
+
     /* Animations */
     .fade-in {
       animation: fadeIn 0.8s ease-in-out;

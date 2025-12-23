@@ -146,6 +146,7 @@ const Navbar: React.FC = () => {
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
+
   return (
     <footer className="bg-mmc-navy text-white pt-20 pb-10 border-t-4 border-mmc-gold">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -182,9 +183,15 @@ const Footer: React.FC = () => {
             <li className="flex items-center gap-3"><Mail size={16} className="text-mmc-gold" /> contact@maisonmariecarrere.com</li>
             <li className="flex items-center gap-3"><Phone size={16} className="text-mmc-gold" /> +221 33 800 00 00</li>
             <li className="flex gap-4 pt-4">
-              <Instagram className="hover:text-mmc-gold cursor-pointer" />
-              <Linkedin className="hover:text-mmc-gold cursor-pointer" />
-              <Facebook className="hover:text-mmc-gold cursor-pointer" />
+              <a href="https://www.instagram.com/pleinepassion" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="hover:text-mmc-gold cursor-pointer transition-colors" />
+              </a>
+              <a href="https://www.linkedin.com/company/maisonmariecarrere" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="hover:text-mmc-gold cursor-pointer transition-colors" />
+              </a>
+              <a href="https://www.facebook.com/maisonmariecarrere" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Facebook className="hover:text-mmc-gold cursor-pointer transition-colors" />
+              </a>
             </li>
           </ul>
         </div>
