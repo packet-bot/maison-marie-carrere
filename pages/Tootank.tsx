@@ -26,11 +26,16 @@ const Tootank: React.FC = () => {
             <img
               src="/images/logos/Tootank logo v2.png"
               alt="Toot'ank"
-              className="h-auto max-w-md w-full object-contain mb-6 drop-shadow-sm"
-              style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(52%) saturate(456%) hue-rotate(118deg) brightness(95%) contrast(91%)' }}
+              className="h-auto max-w-md w-full object-contain mb-6"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(73%) sepia(52%) saturate(456%) hue-rotate(118deg) brightness(95%) contrast(91%) drop-shadow(0 2px 4px rgba(255,255,255,0.8)) drop-shadow(0 0 8px rgba(255,255,255,0.5))'
+              }}
             />
             {/* Tagline - Deep teal for readability on light bg */}
-            <p className="text-teal-800 text-xl md:text-2xl font-bold tracking-wide mb-8">
+            <p
+              className="text-teal-900 text-xl md:text-2xl font-bold tracking-wide mb-8"
+              style={{ textShadow: '0 1px 3px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.6)' }}
+            >
               {t('tt.hero.tagline')}
             </p>
             {/* CTA Button - Pastel Yellow */}
